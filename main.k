@@ -44,27 +44,20 @@ Arpeggio(N seq) {
 n49qkoji1nfhg579-0
 }
 
-Midi->Freq(note-number a4) {
-;; computes frequency in hertz based on a MIDI note number and a reference tuning
-(naemx1n2ou6bi8pf-0) = (nccg9lup1l2frbi-0 / 12)
-(nb4eb140127douia-0) = 2
-(nccg9lup1l2frbi-0) = (nmuv50hdtuna822c-0 - 69)
-(nfrsdirtexcfqy7p-0) = Math:Pow(nb4eb140127douia-0 naemx1n2ou6bi8pf-0)
-(nhvesaj0xjzo24yb-0) = (nmuv50hdtuna822c-1 * nfrsdirtexcfqy7p-0)
-(nmuv50hdtuna822c-0 nmuv50hdtuna822c-1) = arg
-nhvesaj0xjzo24yb-0
-}
-
 Arpeggiator(phase octaves seq) {
 (nebua6uzzxf9vnr2-0) = Arpeggio(n4efjocrbnpgpoj8-1 n4efjocrbnpgpoj8-2)
 (n5ii3kzrct5viali-0) = Arity(nebua6uzzxf9vnr2-0)
+(n6bohx4yl3pnbc7h-0) = (nd9c3929w8vnlfgc-0 - 69)
 (nzvsb40z55dgjuql-0) = (n5ii3kzrct5viali-0 * n5afxslwimv1o81x-0)
+(nt8sckd2828n1yv-0) = 2
 (nd9c3929w8vnlfgc-0) = Select(nebua6uzzxf9vnr2-0 nzvsb40z55dgjuql-0)
 (n4efjocrbnpgpoj8-0 n4efjocrbnpgpoj8-1 n4efjocrbnpgpoj8-2) = arg
-(nt4w9xjugknfg6ah-0) = Midi->Freq(nd9c3929w8vnlfgc-0 nc4hjon1oucofrb3-0)
+(nub37rff3p2n93vu-0) = Math:Pow(nt8sckd2828n1yv-0 n1ztza5ao1y2gs8h-0)
+(n1ztza5ao1y2gs8h-0) = (n6bohx4yl3pnbc7h-0 / 12)
+(n7ime0da5wozlgoo-0) = (nc4hjon1oucofrb3-0 * nub37rff3p2n93vu-0)
 (nc4hjon1oucofrb3-0) = 440
 (n5afxslwimv1o81x-0) = Control:Signal(n4efjocrbnpgpoj8-0)
-nt4w9xjugknfg6ah-0
+n7ime0da5wozlgoo-0
 }
 
 Lag(sig coef) {
