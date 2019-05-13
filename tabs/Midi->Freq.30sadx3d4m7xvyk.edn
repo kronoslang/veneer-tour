@@ -16,30 +16,25 @@
  :label "/ 12"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:float "12"]]
- :pos [-183 -183]
- }
+ :pos [-183 -183]}
  "b4eb140127douia" 
 {:inputs []
  :label "2"
  :outputs [""]
  :parsed [:float "2"]
- :pos [-178 -106]
- }
+ :pos [-178 -106]}
  "ccg9lup1l2frbi" 
 {:inputs ["a"]
  :label "- 69"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "69"]]
- :pos [-309 -183]
- }
+ :pos [-309 -183]}
  "frsdirtexcfqy7p" 
-{
- :inputs ["a" "b"]
+{:inputs ["a" "b"]
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-37 -147]
- }
+ :pos [-37 -147]}
  "hvesaj0xjzo24yb" 
 {:inputs ["a" "b" "more..."]
  :label "*"
@@ -52,5 +47,4 @@
  :label "(note-number a4) = arg"
  :outputs ["note-number" "a4"]
  :parsed "arg"
- :pos [-479 -42]
- }}}}
+ :pos [-479 -42]}}}}

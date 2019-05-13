@@ -35,30 +35,47 @@ ng20yedveocgvlvy-0
 Arpeggio(N seq) {
 ;; repeats 'sequence' 'N' times, transposing each successive sequence up by 12 semitones. following that, the arpeggio is repeated backwards.
 (n44pdx6xgicmh2ej-0) = 0
+(n49qkoji1nfhg579-0) = Algorithm:Flatten(naiiytu8et2w8xy2-0 )
 (naiiytu8et2w8xy2-0) = Algorithm:Map(nfzqh1avbfaiq8zj-0 nif754m7a7al27jt-0 )
 (nfzqh1avbfaiq8zj-0) = (transp) => ( Transpose(nqck38zbi5wzg4aq-1 transp) ) 
-(nkfxhhjrab7b2ovu-0) = (+ 12)
-(n49qkoji1nfhg579-0) = Algorithm:Flatten(naiiytu8et2w8xy2-0 )
 (nif754m7a7al27jt-0) = Algorithm:Expand(nqck38zbi5wzg4aq-0 nkfxhhjrab7b2ovu-0 n44pdx6xgicmh2ej-0)
+(nkfxhhjrab7b2ovu-0) = (+ 12)
 (nqck38zbi5wzg4aq-0 nqck38zbi5wzg4aq-1) = arg
 n49qkoji1nfhg579-0
 }
 
 Midi->Freq(note-number a4) {
 ;; computes frequency in hertz based on a MIDI note number and a reference tuning
-(nmuv50hdtuna822c-0 nmuv50hdtuna822c-1) = arg
-(nccg9lup1l2frbi-0) = (nmuv50hdtuna822c-0 - 69)
 (naemx1n2ou6bi8pf-0) = (nccg9lup1l2frbi-0 / 12)
-(nfrsdirtexcfqy7p-0) = Math:Pow(nb4eb140127douia-0 naemx1n2ou6bi8pf-0)
 (nb4eb140127douia-0) = 2
+(nccg9lup1l2frbi-0) = (nmuv50hdtuna822c-0 - 69)
+(nfrsdirtexcfqy7p-0) = Math:Pow(nb4eb140127douia-0 naemx1n2ou6bi8pf-0)
 (nhvesaj0xjzo24yb-0) = (nmuv50hdtuna822c-1 * nfrsdirtexcfqy7p-0)
+(nmuv50hdtuna822c-0 nmuv50hdtuna822c-1) = arg
 nhvesaj0xjzo24yb-0
 }
 
-Arpeggiator(N base seq) {
-(no4tnze42k0c0q8w-0 no4tnze42k0c0q8w-1 no4tnze42k0c0q8w-2) = arg
-(n8b81k00xun6bb51-0) = Arpeggio(no4tnze42k0c0q8w-0 no4tnze42k0c0q8w-2)
-n8b81k00xun6bb51-0
+Arpeggiator(octaves seq phase) {
+(nebua6uzzxf9vnr2-0) = Arpeggio(n4efjocrbnpgpoj8-0 n4efjocrbnpgpoj8-1)
+(n5ii3kzrct5viali-0) = Arity(nebua6uzzxf9vnr2-0)
+(nzvsb40z55dgjuql-0) = (ncy1h3619fsp6v-0 * n4efjocrbnpgpoj8-2)
+(nd9c3929w8vnlfgc-0) = Select(nebua6uzzxf9vnr2-0 nzvsb40z55dgjuql-0)
+(n4efjocrbnpgpoj8-0 n4efjocrbnpgpoj8-1 n4efjocrbnpgpoj8-2) = arg
+(nt4w9xjugknfg6ah-0) = Midi->Freq(nd9c3929w8vnlfgc-0 nc4hjon1oucofrb3-0)
+(nc4hjon1oucofrb3-0) = 440
+(ncy1h3619fsp6v-0) = (n5ii3kzrct5viali-0 + #1)
+nt4w9xjugknfg6ah-0
+}
+
+Lag(sig coef) {
+;; applies smoothing to signal
+(nd7dyf5r7hi5vbd4-0 nd7dyf5r7hi5vbd4-1) = arg
+(ngibdfldf4hc8d20-0) = z-1(nyv2jw18d6w9br4-0)
+(nd63lmoedzyv6tmy-0) = ngibdfldf4hc8d20-0
+(nyv2jw18d6w9br4-0) = (ngibdfldf4hc8d20-0 + n4oo7u55s57wjhr2-0)
+(n4oo7u55s57wjhr2-0) = (nd7dyf5r7hi5vbd4-1 * nbsfoqa8xffmjqez-0)
+(nbsfoqa8xffmjqez-0) = (nd7dyf5r7hi5vbd4-0 - ngibdfldf4hc8d20-0)
+nd63lmoedzyv6tmy-0
 }
 
 }

@@ -1,4 +1,5 @@
 {:current-tab 0
+ 
  :manifest 
 {:dependencies 
 {}
@@ -8,7 +9,8 @@
  :url "https://kronoslang.io"
  :version "0.1"}
  :origin 
-{:parents ["0"]
+{:branch "default"
+ :parents ["0559fd7ab529a473eb02708ed4bcb1636274c103"]
  :service "bitbucket"
  :slug "kronoslang/veneer-tour"}
- :tabs ("tabs/draft.initial.edn" "tabs/Transpose.t3d9jawtw1aosj2.edn" "tabs/Phasor.jbfnj8trd5esa8i.edn" "tabs/Arpeggio.w0y66vnxb2qnfvy.edn" "tabs/Midi->Freq.30sadx3d4m7xvyk.edn" "tabs/Arpeggiator.hah3wwrweany4fg.edn")}
+ :tabs ("tabs/draft.initial.edn" "tabs/Transpose.t3d9jawtw1aosj2.edn" "tabs/Phasor.jbfnj8trd5esa8i.edn" "tabs/Arpeggio.w0y66vnxb2qnfvy.edn" "tabs/Midi->Freq.30sadx3d4m7xvyk.edn" "tabs/Arpeggiator.vwa6wo5za5v55lm.edn" "tabs/Lag.lsiccf87hqwtzca.edn")}
