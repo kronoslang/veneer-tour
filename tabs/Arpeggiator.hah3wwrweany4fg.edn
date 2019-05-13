@@ -1,0 +1,22 @@
+{:draft-argument "#4 50 [0 4 7 11]"
+ :identifier "Arpeggiator"
+ :identity "hah3wwrweany4fg"
+ :patch
+{:cables
+{["8b81k00xun6bb51" 0] [:fixed "o4tnze42k0c0q8w" 0]
+ ["8b81k00xun6bb51" 1] [:fixed "o4tnze42k0c0q8w" 2]}
+ :nodes
+{"8b81k00xun6bb51" 
+{:inputs ["N" "seq"]
+ :label "Arpeggio($N $seq)"
+ :outputs [""]
+ :parsed [:fn "Arpeggio" [:tuple [:free-var "N"] [:free-var "seq"]]]
+ :pos [-372 -29]
+ :selected true}
+ "o4tnze42k0c0q8w" 
+{:inputs []
+ :label "(N base seq) = arg"
+ :outputs ["N" "base" "seq"]
+ :parsed "arg"
+ :pos [-545 -223]
+ }}}}

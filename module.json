@@ -1,0 +1,8 @@
+{
+  "description": "Tour of Veneer features",
+  "dependencies": {},
+  "version": "0.1",
+  "license": "https://www.eclipse.org/legal/epl-v10.html",
+  "name": "veneer-tour",
+  "url": "https://kronoslang.io"
+}

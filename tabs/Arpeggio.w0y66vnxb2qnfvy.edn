@@ -1,0 +1,65 @@
+{:documentation "repeats 'sequence' 'N' times, transposing each successive sequence up by 12 semitones. following that, the arpeggio is repeated backwards."
+ :draft-argument "#4 [0 5 7 10]"
+ :identifier "Arpeggio"
+ :identity "w0y66vnxb2qnfvy"
+ :patch
+{:cables
+{["49qkoji1nfhg579" 0] [:fixed "aiiytu8et2w8xy2" 0]
+ ["aiiytu8et2w8xy2" 0] [:fixed "fzqh1avbfaiq8zj" 0]
+ ["aiiytu8et2w8xy2" 1] [:fixed "if754m7a7al27jt" 0]
+ ["fzqh1avbfaiq8zj" 0] [:fixed "qck38zbi5wzg4aq" 1]
+ ["if754m7a7al27jt" 0] [:fixed "qck38zbi5wzg4aq" 0]
+ ["if754m7a7al27jt" 1] [:fixed "kfxhhjrab7b2ovu" 0]
+ ["if754m7a7al27jt" 2] [:fixed "44pdx6xgicmh2ej" 0]}
+ :nodes
+{"44pdx6xgicmh2ej" 
+{:inputs []
+ :label "0"
+ :outputs [""]
+ :parsed [:float "0"]
+ :pos [-280 -323]
+ }
+ "49qkoji1nfhg579" 
+{:ephemeral-inputs #{"set1"}
+ :inputs ["set1" "set..."]
+ :label "Algorithm:Flatten($set...)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Flatten" [:tuple [:free-var "set1"] [:free-var "set..."]]]
+ :pos [2 -88]
+ :selected true}
+ "aiiytu8et2w8xy2" 
+{:ephemeral-inputs #{"set1"}
+ :inputs ["func" "set1" "set..."]
+ :label "Algorithm:Map($func $set...)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
+ :pos [-144 -90]
+ }
+ "fzqh1avbfaiq8zj" 
+{:inputs ["seq" "transp"]
+ :label "Transpose($seq $transp)"
+ :outputs [""]
+ :parsed [:fn "Transpose" [:tuple [:free-var "seq"] [:free-var "transp"]]]
+ :pos [-441 22]
+ }
+ "if754m7a7al27jt" 
+{:inputs ["count" "iterator" "seed"]
+ :label "Algorithm:Expand($count $iterator $seed)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
+ :pos [-323 -228]
+ }
+ "kfxhhjrab7b2ovu" 
+{:inputs []
+ :label "(+ 12)"
+ :outputs [""]
+ :parsed [:tuple [:section-right "+" [:float "12"]]]
+ :pos [-468 -323]
+ }
+ "qck38zbi5wzg4aq" 
+{:inputs []
+ :label "(N seq) = arg"
+ :outputs ["N" "seq"]
+ :parsed "arg"
+ :pos [-581 -46]
+ }}}}

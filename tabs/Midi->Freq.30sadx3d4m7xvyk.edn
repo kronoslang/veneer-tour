@@ -1,0 +1,56 @@
+{:documentation "computes frequency in hertz based on a MIDI note number and a reference tuning"
+ :draft-argument "60 440"
+ :identifier "Midi->Freq"
+ :identity "30sadx3d4m7xvyk"
+ :patch
+{:cables
+{["aemx1n2ou6bi8pf" 0] [:fixed "ccg9lup1l2frbi" 0]
+ ["ccg9lup1l2frbi" 0] [:fixed "muv50hdtuna822c" 0]
+ ["frsdirtexcfqy7p" 0] [:fixed "b4eb140127douia" 0]
+ ["frsdirtexcfqy7p" 1] [:fixed "aemx1n2ou6bi8pf" 0]
+ ["hvesaj0xjzo24yb" 0] [:fixed "muv50hdtuna822c" 1]
+ ["hvesaj0xjzo24yb" 1] [:fixed "frsdirtexcfqy7p" 0]}
+ :nodes
+{"aemx1n2ou6bi8pf" 
+{:inputs ["a"]
+ :label "/ 12"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:float "12"]]
+ :pos [-183 -183]
+ }
+ "b4eb140127douia" 
+{:inputs []
+ :label "2"
+ :outputs [""]
+ :parsed [:float "2"]
+ :pos [-178 -106]
+ }
+ "ccg9lup1l2frbi" 
+{:inputs ["a"]
+ :label "- 69"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:float "69"]]
+ :pos [-309 -183]
+ }
+ "frsdirtexcfqy7p" 
+{
+ :inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [-37 -147]
+ }
+ "hvesaj0xjzo24yb" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [21 38]
+ :selected true}
+ "muv50hdtuna822c" 
+{:inputs []
+ :label "(note-number a4) = arg"
+ :outputs ["note-number" "a4"]
+ :parsed "arg"
+ :pos [-479 -42]
+ }}}}

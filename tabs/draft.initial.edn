@@ -1,0 +1,93 @@
+{
+ :identity "initial"
+ :patch
+{:cables
+{["5ii3kzrct5viali" 0] [:fixed "ebua6uzzxf9vnr2" 0]
+ ["8pm69st85s011c4" 0] [:fixed "t4w9xjugknfg6ah" 0]
+ ["bftc8qkou1dneiq" 0] [:fixed "d9c3929w8vnlfgc" 0]
+ ["d9c3929w8vnlfgc" 0] [:fixed "ebua6uzzxf9vnr2" 0]
+ ["d9c3929w8vnlfgc" 1] [:fixed "zvsb40z55dgjuql" 0]
+ ["ebua6uzzxf9vnr2" 0] [:fixed "bsk7e6nrk2clcbn" 0]
+ ["ebua6uzzxf9vnr2" 1] [:fixed "7tcgzzve8aw0md5" 0]
+ ["t4w9xjugknfg6ah" 0] [:fixed "bftc8qkou1dneiq" 0]
+ ["t4w9xjugknfg6ah" 1] [:fixed "th1c59wubee5hzh" 0]
+ ["zvsb40z55dgjuql" 0] [:fixed "5ii3kzrct5viali" 0]
+ ["zvsb40z55dgjuql" 1] [:fixed "0nmn9zte9ini12v" 0]}
+ :nodes
+{"0nmn9zte9ini12v" 
+{:inputs []
+ :label "Phasor(0.5)"
+ :outputs [""]
+ :parsed [:fn "Phasor" [:tuple [:number-widget :float "3pe3qqz9vrgcf1x" "0.84" ""]]]
+ :pos [-304 -320]
+ }
+ "5ii3kzrct5viali" 
+{:inputs ["tuple"]
+ :label "Arity($tuple)"
+ :outputs [""]
+ :parsed [:fn "Arity" [:tuple [:free-var "tuple"]]]
+ :pos [-234 -187]
+ }
+ "7tcgzzve8aw0md5" 
+{:inputs []
+ :label "[0 5 7 10]"
+ :outputs [""]
+ :parsed [:list [:float "0"] [:float "5"] [:float "7"] [:float "10"]]
+ :pos [-577 -294]
+ }
+ "8pm69st85s011c4" 
+{:inputs ["freq"]
+ :label "Phasor($freq)"
+ :outputs [""]
+ :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
+ :pos [112 107]
+ }
+ "bftc8qkou1dneiq" 
+{:inputs ["a"]
+ :label "+ 40"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "40"]]
+ :pos [-120 -94]
+ }
+ "bsk7e6nrk2clcbn" 
+{:inputs []
+ :label "#4"
+ :outputs [""]
+ :parsed [:invariant "4"]
+ :pos [-500 -166]
+ }
+ "d9c3929w8vnlfgc" 
+{:inputs ["vector" "index"]
+ :label "Select($vector $index)"
+ :outputs [""]
+ :parsed [:fn "Select" [:tuple [:free-var "vector"] [:free-var "index"]]]
+ :pos [-232 7]
+ }
+ "ebua6uzzxf9vnr2" 
+{:inputs ["N" "seq"]
+ :label "Arpeggio($N $seq)"
+ :outputs [""]
+ :parsed [:fn "Arpeggio" [:tuple [:free-var "N"] [:free-var "seq"]]]
+ :pos [-405 -124]
+ }
+ "t4w9xjugknfg6ah" 
+{:inputs ["note-number" "a4"]
+ :label "Midi->Freq($note-number $a4)"
+ :outputs [""]
+ :parsed [:fn "Midi->Freq" [:tuple [:free-var "note-number"] [:free-var "a4"]]]
+ :pos [22 -114]
+ }
+ "th1c59wubee5hzh" 
+{:inputs []
+ :label "440"
+ :outputs [""]
+ :parsed [:float "440"]
+ :pos [57 -275]
+ }
+ "zvsb40z55dgjuql" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-72 -251]
+ }}}}
