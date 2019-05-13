@@ -1,0 +1,73 @@
+{:draft-argument "440"
+ :identifier "Arp-Voice"
+ :identity "85w79sae3dp5jar"
+ :patch
+{:cables
+{["25yd618oqou1sv" 0] [:fixed "2vlslf58twro06v" 0]
+ ["2vlslf58twro06v" 0] [:fixed "6s854ryzdxz2n6k" 0]
+ ["2vlslf58twro06v" 1] [:fixed "9jo82fqhm5zcf22" 0]
+ ["60wbldfyx35jpgm" 0] [:fixed "xts3uiirm0rncix" 0]
+ ["9qqvlz52l9ab3uq" 0] [:fixed "25yd618oqou1sv" 0]
+ ["9qqvlz52l9ab3uq" 1] [:fixed "unqjx4uaj7lfbur" 0]
+ ["unqjx4uaj7lfbur" 0] [:fixed "60wbldfyx35jpgm" 0]}
+ :nodes
+{"25yd618oqou1sv" 
+{:inputs ["freq"]
+ :label "Parabolic-Wave($freq)"
+ :outputs [""]
+ :parsed [:fn "Parabolic-Wave" [:tuple [:free-var "freq"]]]
+ :pos [-257 -254]
+ }
+ "2vlslf58twro06v" 
+{:inputs ["sig" "coef"]
+ :label "Lag($sig $coef)"
+ :outputs [""]
+ :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
+ :pos [-354 -340]
+ }
+ "60wbldfyx35jpgm" 
+{:inputs ["freq"]
+ :label "Phasor($freq)"
+ :outputs [""]
+ :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
+ :pos [-395 -48]
+ }
+ "6s854ryzdxz2n6k" 
+{:eval :destructure
+ :inputs []
+ :label "(sig) = arg"
+ :outputs ["sig"]
+ :parsed "arg"
+ :pos [-558 -440]
+ }
+ "9jo82fqhm5zcf22" 
+{:inputs []
+ :label "0.1"
+ :outputs [""]
+ :parsed [:float "0.1"]
+ :pos [-406 -438]
+ }
+ "9qqvlz52l9ab3uq" 
+{:flip-y true
+ :inputs ["sig" "coef"]
+ :label "Lag($sig $coef)"
+ :outputs [""]
+ :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
+ :pos [-39 -142]
+ }
+ "unqjx4uaj7lfbur" 
+{:inputs ["a"]
+ :label "Ping-Pong($a)"
+ :outputs [""]
+ :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
+ :pos [-243 -48]
+ }
+ "xts3uiirm0rncix" 
+{:inputs []
+ :label "0.001"
+ :outputs [""]
+ :parsed [:float "0.001"]
+ :pos [-546 -48]
+ }}
+ :scale 1
+ :scroll [0 0]}}

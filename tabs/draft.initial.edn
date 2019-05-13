@@ -1,85 +1,126 @@
 {:identity "initial"
  :patch
 {:cables
-{["1db7295qk6l4tfl" 0] [:fixed "g1x7wp3u78t0x2e" 0]
- ["1ov1wepeszle9sk" 0] [:fixed "0nmn9zte9ini12v" 0]
- ["2vlslf58twro06v" 0] [:fixed "wjj3x1lgm2aeiv7" 0]
- ["2vlslf58twro06v" 1] [:fixed "9jo82fqhm5zcf22" 0]
- ["8pm69st85s011c4" 0] [:fixed "2vlslf58twro06v" 0]
- ["g1x7wp3u78t0x2e" 0] [:fixed "1ov1wepeszle9sk" 0]
+{["0b1lenwbiasmvbe" 0] [:fixed "0nmn9zte9ini12v" 0]
+ ["0b1lenwbiasmvbe" 1] [:fixed "9mwbg0f9je6ezq4" 0]
+ ["3to4eph0jiegbzd" 0] [:fixed "aaabpbdi62qb90b" 0]
+ ["3to4eph0jiegbzd" 1] [:fixed "l8d0fu23edscaam" 0]
+ ["4m2j20ftbnldikp" 0] [:fixed "wjj3x1lgm2aeiv7" 0]
+ ["53bzfbdo7an4zl7" 0] [:fixed "0b1lenwbiasmvbe" 0]
+ ["aaabpbdi62qb90b" 0] [:fixed "z06mkl0jc911ub7" 0]
+ ["l8d0fu23edscaam" 0] [:fixed "4m2j20ftbnldikp" 0]
+ ["l8d0fu23edscaam" 1] [:fixed "l00n9pc7qcrwx0g" 0]
  ["wjj3x1lgm2aeiv7" 0] [:fixed "i3nfwrmri60ztds" 0]
  ["wjj3x1lgm2aeiv7" 1] [:fixed "7tcgzzve8aw0md5" 0]
- ["wjj3x1lgm2aeiv7" 2] [:fixed "1db7295qk6l4tfl" 0]}
+ ["wjj3x1lgm2aeiv7" 2] [:fixed "53bzfbdo7an4zl7" 0]
+ ["z06mkl0jc911ub7" 0] [:fixed "fq421ot7f6px8y" 0]
+ ["z06mkl0jc911ub7" 1] [:fixed "h0aeg84gcoa0nx" 0]
+ ["z06mkl0jc911ub7" 2] [:fixed "0nmn9zte9ini12v" 0]}
  :nodes
-{"0nmn9zte9ini12v" 
+{"0b1lenwbiasmvbe" 
+{:inputs ["a" "in2"]
+ :label "Subdivide"
+ :outputs [""]
+ :parsed [:fn "Subdivide" [:tuple [:free-var "a"] [:free-var "in2"]]]
+ :pos [-652 -968]
+ }
+ "0nmn9zte9ini12v" 
 {:inputs []
  :label "Phasor(0.5)"
  :outputs [""]
- :parsed [:fn "Phasor" [:tuple [:number-widget :float "3pe3qqz9vrgcf1x" "0.34148" ""]]]
- :pos [-549 -295]
+ :parsed [:fn "Phasor" [:tuple [:number-widget :float "3pe3qqz9vrgcf1x" "0.058051" ""]]]
+ :pos [-960 -800]
  }
- "1db7295qk6l4tfl" 
+ "3to4eph0jiegbzd" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [319 -532]
+ :selected true}
+ "4m2j20ftbnldikp" 
+{:inputs ["sig"]
+ :label "Arp-Voice"
+ :outputs [""]
+ :parsed [:fn "Arp-Voice" [:tuple [:free-var "sig"]]]
+ :pos [-39 -814]
+ }
+ "53bzfbdo7an4zl7" 
 {:inputs ["a"]
- :label "Abs($a)"
+ :label "Ping-Pong"
  :outputs [""]
- :parsed [:fn "Abs" [:tuple [:free-var "a"]]]
- :pos [-33 -267]
- }
- "1ov1wepeszle9sk" 
-{:inputs ["a"]
- :label "* 2"
- :outputs [""]
- :parsed [:infix [:free-var "a"] "*" [:float "2"]]
- :pos [-246 -267]
- }
- "2vlslf58twro06v" 
-{:inputs ["sig" "coef"]
- :label "Lag($sig $coef)"
- :outputs [""]
- :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [100 -111]
+ :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
+ :pos [-453 -978]
  }
  "7tcgzzve8aw0md5" 
 {:inputs []
  :label "[40 45 47 50]"
  :outputs [""]
  :parsed [:list [:float "40"] [:float "45"] [:float "47"] [:float "50"]]
- :pos [-526 -197]
- :selected true}
- "8pm69st85s011c4" 
-{:inputs ["freq"]
- :label "Phasor($freq)"
- :outputs [""]
- :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [172 -26]
+ :pos [-594 -879]
  }
- "9jo82fqhm5zcf22" 
+ "9mwbg0f9je6ezq4" 
 {:inputs []
- :label "0.01"
+ :label "8"
  :outputs [""]
- :parsed [:number-widget :float "bgmbchreggc4c3b" "0.002" ""]
- :pos [77 -263]
+ :parsed [:number-widget :float "axyatnanp81y7t" "4" ""]
+ :pos [-739 -1068]
  }
- "g1x7wp3u78t0x2e" 
-{:inputs ["a"]
- :label "- 1"
+ "aaabpbdi62qb90b" 
+{:inputs ["freq"]
+ :label "Bass-Voice($freq)"
  :outputs [""]
- :parsed [:infix [:free-var "a"] "-" [:float "1"]]
- :pos [-146 -267]
+ :parsed [:fn "Bass-Voice" [:tuple [:free-var "freq"]]]
+ :pos [-236 -539]
+ }
+ "fq421ot7f6px8y" 
+{:inputs []
+ :label "#1"
+ :outputs [""]
+ :parsed [:invariant "1"]
+ :pos [-609 -574]
+ }
+ "h0aeg84gcoa0nx" 
+{:inputs []
+ :label "[28 31 33 36 35 31 33 30]"
+ :outputs [""]
+ :parsed [:list [:float "28"] [:float "31"] [:float "33"] [:float "36"] [:float "35"] [:float "31"] [:float "33"] [:float "30"]]
+ :pos [-955 -683]
  }
  "i3nfwrmri60ztds" 
 {:inputs []
- :label "#4"
+ :label "#5"
  :outputs [""]
- :parsed [:invariant "4"]
- :pos [-402 -85]
- :selected true}
+ :parsed [:invariant "5"]
+ :pos [-411 -777]
+ }
+ "l00n9pc7qcrwx0g" 
+{:inputs []
+ :label "0.008"
+ :outputs [""]
+ :parsed [:float "0.008"]
+ :pos [68 -928]
+ }
+ "l8d0fu23edscaam" 
+{:inputs ["sig" "mod-freq"]
+ :label "Auto-Panner($sig $mod-freq)"
+ :outputs [""]
+ :parsed [:fn "Auto-Panner" [:tuple [:free-var "sig"] [:free-var "mod-freq"]]]
+ :pos [138 -674]
+ }
  "wjj3x1lgm2aeiv7" 
 {:inputs ["octaves" "seq" "phase"]
  :label "Arpeggiator($octaves $seq $phase)"
  :outputs [""]
  :parsed [:fn "Arpeggiator" [:tuple [:free-var "octaves"] [:free-var "seq"] [:free-var "phase"]]]
- :pos [-206 -94]
- :selected true}}
- :scale 1
+ :pos [-294 -819]
+ }
+ "z06mkl0jc911ub7" 
+{:inputs ["octaves" "seq" "phase"]
+ :label "Arpeggiator($octaves $seq $phase)"
+ :outputs [""]
+ :parsed [:fn "Arpeggiator" [:tuple [:free-var "octaves"] [:free-var "seq"] [:free-var "phase"]]]
+ :pos [-506 -574]
+ }}
+ :scale 0.6012635219552155
  :scroll [0 0]}}

@@ -1,0 +1,76 @@
+{:draft-argument "Phasor(40) 3.2 0.1"
+ :identifier "Reverb"
+ :identity "17n9ne056uq7wrg"
+ :patch
+{:cables
+{["4o9tpv8t9e8r3c5" 0] [:fixed "drejkpp499evzk5" 0]
+ ["4o9tpv8t9e8r3c5" 1] [:fixed "drejkpp499evzk5" 1]
+ ["4o9tpv8t9e8r3c5" 2] [:fixed "7urmnz602x877if" 0]
+ ["4o9tpv8t9e8r3c5" 3] [:fixed "qpd9tdye058230f" 0]
+ ["6716r2bof5l02sr" 0] [:fixed "drejkpp499evzk5" 0]
+ ["6716r2bof5l02sr" 1] [:fixed "drejkpp499evzk5" 1]
+ ["6716r2bof5l02sr" 2] [:fixed "c1u5eijan2hbd54" 0]
+ ["6716r2bof5l02sr" 3] [:fixed "fnt7sk8whk7ke86" 0]
+ ["yq1743lkdhceb4" 0] [:fixed "6716r2bof5l02sr" 0]
+ ["yq1743lkdhceb4" 1] [:fixed "4o9tpv8t9e8r3c5" 0]}
+ :nodes
+{"4o9tpv8t9e8r3c5" 
+{:inputs ["sig" "rt60" "d0" "dmul"]
+ :label "Mono-Verb($sig $rt60 $d0 $dmul)"
+ :outputs [""]
+ :parsed [:fn "Mono-Verb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "d0"] [:free-var "dmul"]]]
+ :pos [-211 -220]
+ }
+ "6716r2bof5l02sr" 
+{:inputs ["sig" "rt60" "d0" "dmul"]
+ :label "Mono-Verb($sig $rt60 $d0 $dmul)"
+ :outputs [""]
+ :parsed [:fn "Mono-Verb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "d0"] [:free-var "dmul"]]]
+ :pos [-228 -469]
+ }
+ "7urmnz602x877if" 
+{:inputs []
+ :label "#800"
+ :outputs [""]
+ :parsed [:invariant "800"]
+ :pos [-213 -350]
+ }
+ "c1u5eijan2hbd54" 
+{:inputs []
+ :label "#580"
+ :outputs [""]
+ :parsed [:invariant "580"]
+ :pos [-310 -617]
+ }
+ "drejkpp499evzk5" 
+{:inputs []
+ :label "(sig rt60 mix) = arg"
+ :outputs ["sig" "rt60" "mix"]
+ :parsed "arg"
+ :pos [-441 -404]
+ }
+ "fnt7sk8whk7ke86" 
+{:inputs []
+ :label "#1.3"
+ :outputs [""]
+ :parsed [:invariant "1.3"]
+ :pos [-184 -617]
+ }
+ "qpd9tdye058230f" 
+{:inputs []
+ :label "#1.2"
+ :outputs [""]
+ :parsed [:invariant "1.2"]
+ :pos [-87 -350]
+ }
+ "yq1743lkdhceb4" 
+{:ephemeral-inputs #{"elements1" "elements2"}
+ :flip-y true
+ :inputs ["elements1" "elements2" "elements..."]
+ :label "Vector:Cons($elements...)"
+ :outputs [""]
+ :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements..."]]]
+ :pos [95 -425]
+ :selected true}}
+ :scale 1
+ :scroll [0 0]}}

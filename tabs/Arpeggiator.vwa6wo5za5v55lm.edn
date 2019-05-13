@@ -2,16 +2,16 @@
  :identity "vwa6wo5za5v55lm"
  :patch
 {:cables
-{["5ii3kzrct5viali" 0] [:fixed "ebua6uzzxf9vnr2" 0]
- ["cy1h3619fsp6v" 0] [:fixed "5ii3kzrct5viali" 0]
+{["5afxslwimv1o81x" 0] [:fixed "4efjocrbnpgpoj8" 2]
+ ["5ii3kzrct5viali" 0] [:fixed "ebua6uzzxf9vnr2" 0]
  ["d9c3929w8vnlfgc" 0] [:fixed "ebua6uzzxf9vnr2" 0]
  ["d9c3929w8vnlfgc" 1] [:fixed "zvsb40z55dgjuql" 0]
  ["ebua6uzzxf9vnr2" 0] [:fixed "4efjocrbnpgpoj8" 0]
  ["ebua6uzzxf9vnr2" 1] [:fixed "4efjocrbnpgpoj8" 1]
  ["t4w9xjugknfg6ah" 0] [:fixed "d9c3929w8vnlfgc" 0]
  ["t4w9xjugknfg6ah" 1] [:fixed "c4hjon1oucofrb3" 0]
- ["zvsb40z55dgjuql" 0] [:fixed "cy1h3619fsp6v" 0]
- ["zvsb40z55dgjuql" 1] [:fixed "4efjocrbnpgpoj8" 2]}
+ ["zvsb40z55dgjuql" 0] [:fixed "5ii3kzrct5viali" 0]
+ ["zvsb40z55dgjuql" 1] [:fixed "5afxslwimv1o81x" 0]}
  :nodes
 {"4efjocrbnpgpoj8" 
 {:eval :destructure
@@ -20,7 +20,13 @@
  :outputs ["octaves" "seq" "phase"]
  :parsed "arg"
  :pos [-458 -175]
- :selected true}
+ }
+ "5afxslwimv1o81x" 
+{:inputs ["sig"]
+ :label "Control:Signal($sig)"
+ :outputs [""]
+ :parsed [:fn "Control:Signal" [:tuple [:free-var "sig"]]]
+ :pos [-287 -148]}
  "5ii3kzrct5viali" 
 {:inputs ["tuple"]
  :label "Arity($tuple)"
@@ -34,13 +40,6 @@
  :outputs [""]
  :parsed [:float "440"]
  :pos [170 -116]
- }
- "cy1h3619fsp6v" 
-{:inputs ["a"]
- :label "+ #1"
- :outputs [""]
- :parsed [:infix [:free-var "a"] "+" [:invariant "1"]]
- :pos [-153 -18]
  }
  "d9c3929w8vnlfgc" 
 {:inputs ["vector" "index"]

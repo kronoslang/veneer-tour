@@ -1,0 +1,29 @@
+{:identifier "Subdivide"
+ :identity "sfbhlpekca3hco4"
+ :patch
+{:cables
+{["h533y0ti6542h63" 0] [:fixed "26kctj6m5yz4nd" 0]
+ ["h533y0ti6542h63" 1] [:fixed "26kctj6m5yz4nd" 1]
+ ["m6rwx9vcdepnnr" 0] [:fixed "h533y0ti6542h63" 0]}
+ :nodes
+{"26kctj6m5yz4nd" 
+{:eval :destructure
+ :inputs []
+ :label "(a in2) = arg"
+ :outputs ["a" "in2"]
+ :parsed "arg"
+ :pos [50 100]}
+ "h533y0ti6542h63" 
+{:inputs ["a" "in2"]
+ :label "($a * $in2)"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "in2"]]
+ :pos [200 300]
+ :selected true}
+ "m6rwx9vcdepnnr" 
+{:inputs ["x"]
+ :label "Fraction($x)"
+ :outputs [""]
+ :parsed [:fn "Fraction" [:tuple [:free-var "x"]]]
+ :pos [333 300]
+ :selected true}}}}

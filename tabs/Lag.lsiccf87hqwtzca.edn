@@ -18,8 +18,7 @@
  :label "($coef * $in2)"
  :outputs [""]
  :parsed [:infix [:free-var "coef"] "*" [:free-var "in2"]]
- :pos [-147 -21]
- }
+ :pos [-147 -21]}
  "bsfoqa8xffmjqez" 
 {:inputs ["sig" "state"]
  :label "($sig - $state)"
@@ -32,28 +31,24 @@
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [73 191]
- }
+ :pos [73 191]}
  "d7dyf5r7hi5vbd4" 
 {:inputs []
  :label "(sig coef) = arg"
  :outputs ["sig" "coef"]
  :parsed "arg"
- :pos [-397 -42]
- }
+ :pos [-397 -42]}
  "gibdfldf4hc8d20" 
 {:inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [-124 185]
- }
+ :pos [-124 185]}
  "yv2jw18d6w9br4" 
 {:inputs ["state" "in2"]
  :label "($state + $in2)"
  :outputs [""]
  :parsed [:infix [:free-var "state"] "+" [:free-var "in2"]]
- :pos [-113 63]
- }}
+ :pos [-113 63]}}
  :scale 1
  :scroll [0 0]}}

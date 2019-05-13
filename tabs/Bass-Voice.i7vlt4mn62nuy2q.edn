@@ -1,0 +1,108 @@
+{:identifier "Bass-Voice"
+ :identity "i7vlt4mn62nuy2q"
+ :patch
+{:cables
+{["1k75wcdzwfkuqpv" 0] [:fixed "yo5bpu5a9chj9ew" 0]
+ ["3f15whwxihu0c24" 0] [:fixed "45p9ywsvt2xcqxm" 0]
+ ["3f15whwxihu0c24" 1] [:fixed "45p9ywsvt2xcqxm" 0]
+ ["3f15whwxihu0c24" 2] [:fixed "45p9ywsvt2xcqxm" 0]
+ ["3f15whwxihu0c24" 3] [:fixed "45p9ywsvt2xcqxm" 0]
+ ["45p9ywsvt2xcqxm" 0] [:fixed "1k75wcdzwfkuqpv" 0]
+ ["6jw8vp6je1e1bp" 0] [:fixed "9n6lwheh74q281" 0]
+ ["dqw7d3zds9xjjhg" 0] [:fixed "bht48z5l8wt1mle" 0]
+ ["dqw7d3zds9xjjhg" 1] [:fixed "odh5icwjmcez9wr" 0]
+ ["fkb4hss14lm28g4" 0] [:fixed "mla2nj287a1vv4x" 0]
+ ["fkb4hss14lm28g4" 1] [:fixed "sixncu0gz1mkqm0" 0]
+ ["mla2nj287a1vv4x" 0] [:fixed "dqw7d3zds9xjjhg" 0]
+ ["mla2nj287a1vv4x" 1] [:fixed "6jw8vp6je1e1bp" 0]
+ ["sixncu0gz1mkqm0" 0] [:fixed "3f15whwxihu0c24" 0]}
+ :nodes
+{"1k75wcdzwfkuqpv" 
+{:inputs ["freq"]
+ :label "Phasor($freq)"
+ :outputs [""]
+ :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
+ :pos [-289 -91]
+ }
+ "3f15whwxihu0c24" 
+{:ephemeral-inputs #{"more1" "more2"}
+ :inputs ["a" "b" "more1" "more2" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more2"] [:free-var "more..."]]
+ :pos [65 36]
+ }
+ "45p9ywsvt2xcqxm" 
+{:inputs ["a"]
+ :label "Ping-Pong($a)"
+ :outputs [""]
+ :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
+ :pos [-134 -59]
+ }
+ "6jw8vp6je1e1bp" 
+{:inputs ["freq"]
+ :label "Phasor($freq)"
+ :outputs [""]
+ :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
+ :pos [68 -281]
+ }
+ "9n6lwheh74q281" 
+{:inputs []
+ :label "0.1"
+ :outputs [""]
+ :parsed [:float "0.1"]
+ :pos [-78 -328]
+ }
+ "bht48z5l8wt1mle" 
+{:eval :destructure
+ :inputs []
+ :label "freq = arg"
+ :outputs ["freq"]
+ :parsed "arg"
+ :pos [-441 -257]
+ :selected true}
+ "dqw7d3zds9xjjhg" 
+{:inputs ["sig" "coef"]
+ :label "Lag($sig $coef)"
+ :outputs [""]
+ :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
+ :pos [-135 -224]
+ }
+ "fkb4hss14lm28g4" 
+{:flip-y true
+ :inputs ["sig" "coef"]
+ :label "Lag($sig $coef)"
+ :outputs [""]
+ :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
+ :pos [354 -167]
+ }
+ "mla2nj287a1vv4x" 
+{:inputs ["freq" "width"]
+ :label "PWM($freq $width)"
+ :outputs [""]
+ :parsed [:fn "PWM" [:tuple [:free-var "freq"] [:free-var "width"]]]
+ :pos [181 -163]
+ }
+ "odh5icwjmcez9wr" 
+{:inputs []
+ :label "0.02"
+ :outputs [""]
+ :parsed [:float "0.02"]
+ :pos [-323 -404]
+ }
+ "sixncu0gz1mkqm0" 
+{:inputs ["a"]
+ :label "+ 0.01"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "0.01"]]
+ :pos [232 35]
+ }
+ "yo5bpu5a9chj9ew" 
+{:inputs []
+ :label "0.03"
+ :outputs [""]
+ :parsed [:float "0.03"]
+ :pos [-420 -85]
+ }}
+ :scale 1
+ :scroll [0 0]}}

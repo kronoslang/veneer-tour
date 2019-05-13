@@ -58,24 +58,134 @@ nhvesaj0xjzo24yb-0
 Arpeggiator(octaves seq phase) {
 (nebua6uzzxf9vnr2-0) = Arpeggio(n4efjocrbnpgpoj8-0 n4efjocrbnpgpoj8-1)
 (n5ii3kzrct5viali-0) = Arity(nebua6uzzxf9vnr2-0)
-(nzvsb40z55dgjuql-0) = (ncy1h3619fsp6v-0 * n4efjocrbnpgpoj8-2)
+(nzvsb40z55dgjuql-0) = (n5ii3kzrct5viali-0 * n5afxslwimv1o81x-0)
 (nd9c3929w8vnlfgc-0) = Select(nebua6uzzxf9vnr2-0 nzvsb40z55dgjuql-0)
 (n4efjocrbnpgpoj8-0 n4efjocrbnpgpoj8-1 n4efjocrbnpgpoj8-2) = arg
 (nt4w9xjugknfg6ah-0) = Midi->Freq(nd9c3929w8vnlfgc-0 nc4hjon1oucofrb3-0)
 (nc4hjon1oucofrb3-0) = 440
-(ncy1h3619fsp6v-0) = (n5ii3kzrct5viali-0 + #1)
+(n5afxslwimv1o81x-0) = Control:Signal(n4efjocrbnpgpoj8-2)
 nt4w9xjugknfg6ah-0
 }
 
 Lag(sig coef) {
 ;; applies smoothing to signal
-(nd7dyf5r7hi5vbd4-0 nd7dyf5r7hi5vbd4-1) = arg
-(ngibdfldf4hc8d20-0) = z-1(nyv2jw18d6w9br4-0)
-(nd63lmoedzyv6tmy-0) = ngibdfldf4hc8d20-0
-(nyv2jw18d6w9br4-0) = (ngibdfldf4hc8d20-0 + n4oo7u55s57wjhr2-0)
 (n4oo7u55s57wjhr2-0) = (nd7dyf5r7hi5vbd4-1 * nbsfoqa8xffmjqez-0)
 (nbsfoqa8xffmjqez-0) = (nd7dyf5r7hi5vbd4-0 - ngibdfldf4hc8d20-0)
+(nd63lmoedzyv6tmy-0) = ngibdfldf4hc8d20-0
+(nd7dyf5r7hi5vbd4-0 nd7dyf5r7hi5vbd4-1) = arg
+(ngibdfldf4hc8d20-0) = z-1(nyv2jw18d6w9br4-0)
+(nyv2jw18d6w9br4-0) = (ngibdfldf4hc8d20-0 + n4oo7u55s57wjhr2-0)
 nd63lmoedzyv6tmy-0
+}
+
+Parabolic-Wave(freq) {
+(n8pm69st85s011c4-0) = Phasor(nzbb4crogb1j8sdg-0)
+(nkhtag0at6be2pfh-0) = (n9qj344tnq54d75n-0 - 1)
+(n9qj344tnq54d75n-0) = (n8pm69st85s011c4-0 * 2)
+(n2h6kw3ltllc586l-0) = (nkhtag0at6be2pfh-0 * nkhtag0at6be2pfh-0)
+(nzbb4crogb1j8sdg-0) = arg
+(nikg50jm52pwxmtk-0) = (n2h6kw3ltllc586l-0 - 0.5)
+(nedp8hktjh8ltei0-0) = nikg50jm52pwxmtk-0
+nedp8hktjh8ltei0-0
+}
+
+PWM(freq width) {
+(n2q7bjv8vmsyj99d-0 n2q7bjv8vmsyj99d-1) = arg
+(nmdiuvla9wt9v49u-0) = Phasor(n2q7bjv8vmsyj99d-0)
+(nebzup1mibzzh3m5-0) = Algorithm:Choose(nbzs9cgu88vusa3o-0 nmiamdxmgbt6s2gj-0 ncuy9y6pretrgu8s-0)
+(nbzs9cgu88vusa3o-0) = (n2q7bjv8vmsyj99d-1 > nmdiuvla9wt9v49u-0)
+(nmiamdxmgbt6s2gj-0) = 0.5
+(ncuy9y6pretrgu8s-0) = -0.5
+(nz8lbro8sj8ykm3h-0) = nebzup1mibzzh3m5-0
+nz8lbro8sj8ykm3h-0
+}
+
+Ping-Pong(a) {
+(ng1x7wp3u78t0x2e-0) = (n1ov1wepeszle9sk-0 - 1)
+(n1db7295qk6l4tfl-0) = Abs(ng1x7wp3u78t0x2e-0)
+(n1ov1wepeszle9sk-0) = (nxfhl0e3gk11js8e-0 * 2)
+(nxfhl0e3gk11js8e-0) = arg
+n1db7295qk6l4tfl-0
+}
+
+Subdivide(a in2) {
+(nm6rwx9vcdepnnr-0) = Fraction(nh533y0ti6542h63-0)
+(nh533y0ti6542h63-0) = (n26kctj6m5yz4nd-0 * n26kctj6m5yz4nd-1)
+(n26kctj6m5yz4nd-0 n26kctj6m5yz4nd-1) = arg
+nm6rwx9vcdepnnr-0
+}
+
+Bass-Voice(freq) {
+(ndqw7d3zds9xjjhg-0) = Lag(nbht48z5l8wt1mle-0 nodh5icwjmcez9wr-0)
+(nmla2nj287a1vv4x-0) = PWM(ndqw7d3zds9xjjhg-0 n6jw8vp6je1e1bp-0)
+(n1k75wcdzwfkuqpv-0) = Phasor(nyo5bpu5a9chj9ew-0)
+(nsixncu0gz1mkqm0-0) = (n3f15whwxihu0c24-0 + 0.01)
+(n9n6lwheh74q281-0) = 0.1
+(n6jw8vp6je1e1bp-0) = Phasor(n9n6lwheh74q281-0)
+(nfkb4hss14lm28g4-0) = Lag(nmla2nj287a1vv4x-0 nsixncu0gz1mkqm0-0)
+(n3f15whwxihu0c24-0) = (n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0)
+(nyo5bpu5a9chj9ew-0) = 0.03
+(nbht48z5l8wt1mle-0) = arg
+(nodh5icwjmcez9wr-0) = 0.02
+(n45p9ywsvt2xcqxm-0) = Ping-Pong(n1k75wcdzwfkuqpv-0)
+nfkb4hss14lm28g4-0
+}
+
+Arp-Voice(sig) {
+(n9qqvlz52l9ab3uq-0) = Lag(n25yd618oqou1sv-0 nunqjx4uaj7lfbur-0)
+(n25yd618oqou1sv-0) = Parabolic-Wave(n2vlslf58twro06v-0)
+(nxts3uiirm0rncix-0) = 0.001
+(n60wbldfyx35jpgm-0) = Phasor(nxts3uiirm0rncix-0)
+(n6s854ryzdxz2n6k-0) = arg
+(nunqjx4uaj7lfbur-0) = Ping-Pong(n60wbldfyx35jpgm-0)
+(n2vlslf58twro06v-0) = Lag(n6s854ryzdxz2n6k-0 n9jo82fqhm5zcf22-0)
+(n9jo82fqhm5zcf22-0) = 0.1
+n9qqvlz52l9ab3uq-0
+}
+
+Auto-Panner(sig mod-freq) {
+(nqof6cpbkk039kdj-0 nqof6cpbkk039kdj-1) = arg
+(n7nm24tw8vqkv27j-0) = Phasor(nqof6cpbkk039kdj-1)
+(nbrdcah2rl2h8rdb-0) = Ping-Pong(n7nm24tw8vqkv27j-0)
+(n9o2djwb9e1ui5yj-0) = (1 - nbrdcah2rl2h8rdb-0)
+(nn89xiyww4dkle27-0) = Vector:Cons(nbrdcah2rl2h8rdb-0 n9o2djwb9e1ui5yj-0 )
+(nbgt1apghq4ku3b2-0) = (nqof6cpbkk039kdj-0 * nn89xiyww4dkle27-0)
+nbgt1apghq4ku3b2-0
+}
+
+Reverb(sig rt60 mix) {
+(nyq1743lkdhceb4-0) = Vector:Cons(n6716r2bof5l02sr-0 n4o9tpv8t9e8r3c5-0 )
+(n4o9tpv8t9e8r3c5-0) = Mono-Verb(ndrejkpp499evzk5-0 ndrejkpp499evzk5-1 n7urmnz602x877if-0 nqpd9tdye058230f-0)
+(nqpd9tdye058230f-0) = #1.2
+(nc1u5eijan2hbd54-0) = #580
+(n7urmnz602x877if-0) = #800
+(nfnt7sk8whk7ke86-0) = #1.3
+(n6716r2bof5l02sr-0) = Mono-Verb(ndrejkpp499evzk5-0 ndrejkpp499evzk5-1 nc1u5eijan2hbd54-0 nfnt7sk8whk7ke86-0)
+(ndrejkpp499evzk5-0 ndrejkpp499evzk5-1 ndrejkpp499evzk5-2) = arg
+nyq1743lkdhceb4-0
+}
+
+Delay(sig len feedback) {
+(nbth2lr1oj3q5qxz-0 nbth2lr1oj3q5qxz-1 nbth2lr1oj3q5qxz-2) = arg
+(n5cae3018fue5bft-0) = rbuf(nbth2lr1oj3q5qxz-1 n37qrkm5qz62aig5-0)
+(n37qrkm5qz62aig5-0) = (nbth2lr1oj3q5qxz-0 + ndmok8lhghvin91k-0)
+(ndmok8lhghvin91k-0) = (n5cae3018fue5bft-0 * nbth2lr1oj3q5qxz-2)
+(nfwfysl9ocv7xdmg-0) = ndmok8lhghvin91k-0
+nfwfysl9ocv7xdmg-0
+}
+
+Mono-Verb(sig rt60 d0 dmul) {
+(n6pewh807ebdm1y7-0) = (len) => ( Delay(nfovycyja7hcdb0-0 len Math:Pow(0.001 (len / naa6a4va2t4x5cag-0))) ) 
+(nx788blba8ccjl-0) = #8
+(nnoa69bhishhcb7p-0) = Rate-of(nfovycyja7hcdb0-0)
+(ng75up5zo5xk4p7-0) = Algorithm:Expand(nx788blba8ccjl-0 nh7u833jic9ucvfq-0 nfovycyja7hcdb0-2)
+(nh7u833jic9ucvfq-0) = (b) => ( (nfovycyja7hcdb0-3 * b) ) 
+(naa6a4va2t4x5cag-0) = (nfovycyja7hcdb0-1 * nnoa69bhishhcb7p-0)
+(nfovycyja7hcdb0-0 nfovycyja7hcdb0-1 nfovycyja7hcdb0-2 nfovycyja7hcdb0-3) = arg
+(ndo5u321cp3ujz3s-0) = Algorithm:Reduce(nu6bc2pvrryxot6o-0 nzpux5i59dohbf5y-0 )
+(nu6bc2pvrryxot6o-0) = (a b) => ( (a + b) ) 
+(nzpux5i59dohbf5y-0) = Algorithm:Map(n6pewh807ebdm1y7-0 ng75up5zo5xk4p7-0 )
+ndo5u321cp3ujz3s-0
 }
 
 }

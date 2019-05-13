@@ -1,0 +1,36 @@
+{:identifier "Ping-Pong"
+ :identity "iop6tqwisrma4g"
+ :patch
+{:cables
+{["1db7295qk6l4tfl" 0] [:fixed "g1x7wp3u78t0x2e" 0]
+ ["1ov1wepeszle9sk" 0] [:fixed "xfhl0e3gk11js8e" 0]
+ ["g1x7wp3u78t0x2e" 0] [:fixed "1ov1wepeszle9sk" 0]}
+ :nodes
+{"1db7295qk6l4tfl" 
+{:inputs ["a"]
+ :label "Abs($a)"
+ :outputs [""]
+ :parsed [:fn "Abs" [:tuple [:free-var "a"]]]
+ :pos [434 300]
+ :selected true}
+ "1ov1wepeszle9sk" 
+{:inputs ["a"]
+ :label "* 2"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:float "2"]]
+ :pos [200 300]
+ :selected true}
+ "g1x7wp3u78t0x2e" 
+{:inputs ["a"]
+ :label "- 1"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:float "1"]]
+ :pos [301 300]
+ :selected true}
+ "xfhl0e3gk11js8e" 
+{:eval :destructure
+ :inputs []
+ :label "(a) = arg"
+ :outputs ["a"]
+ :parsed "arg"
+ :pos [50 100]}}}}
