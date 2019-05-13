@@ -153,7 +153,7 @@ Auto-Panner(sig mod-freq) {
 nbgt1apghq4ku3b2-0
 }
 
-Reverb(sig rt60 mix) {
+Reverb(sig rt60) {
 (nyq1743lkdhceb4-0) = Vector:Cons(n6716r2bof5l02sr-0 n4o9tpv8t9e8r3c5-0 )
 (n4o9tpv8t9e8r3c5-0) = Mono-Verb(ndrejkpp499evzk5-0 ndrejkpp499evzk5-1 n7urmnz602x877if-0 nqpd9tdye058230f-0)
 (nqpd9tdye058230f-0) = #1.2
@@ -161,16 +161,16 @@ Reverb(sig rt60 mix) {
 (n7urmnz602x877if-0) = #800
 (nfnt7sk8whk7ke86-0) = #1.3
 (n6716r2bof5l02sr-0) = Mono-Verb(ndrejkpp499evzk5-0 ndrejkpp499evzk5-1 nc1u5eijan2hbd54-0 nfnt7sk8whk7ke86-0)
-(ndrejkpp499evzk5-0 ndrejkpp499evzk5-1 ndrejkpp499evzk5-2) = arg
+(ndrejkpp499evzk5-0 ndrejkpp499evzk5-1) = arg
 nyq1743lkdhceb4-0
 }
 
 Delay(sig len feedback) {
 (nbth2lr1oj3q5qxz-0 nbth2lr1oj3q5qxz-1 nbth2lr1oj3q5qxz-2) = arg
-(n5cae3018fue5bft-0) = rbuf(nbth2lr1oj3q5qxz-1 n37qrkm5qz62aig5-0)
-(n37qrkm5qz62aig5-0) = (nbth2lr1oj3q5qxz-0 + ndmok8lhghvin91k-0)
+(n5cae3018fue5bft-0) = rbuf(nbth2lr1oj3q5qxz-1 nowk7xv7feo935nk-0)
 (ndmok8lhghvin91k-0) = (n5cae3018fue5bft-0 * nbth2lr1oj3q5qxz-2)
 (nfwfysl9ocv7xdmg-0) = ndmok8lhghvin91k-0
+(nowk7xv7feo935nk-0) = (nbth2lr1oj3q5qxz-0 - ndmok8lhghvin91k-0)
 nfwfysl9ocv7xdmg-0
 }
 

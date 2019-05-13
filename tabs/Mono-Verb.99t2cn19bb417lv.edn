@@ -23,7 +23,7 @@
  :outputs [""]
  :parsed [:fn "Delay" [:tuple [:free-var "sig"] [:free-var "len"] [:fn "Math:Pow" [:tuple [:float "0.001"] [:infix [:free-var "len"] "/" [:free-var "rt60"]]]]]]
  :pos [-500 -237]
- :selected true}
+ }
  "aa6a4va2t4x5cag" 
 {:inputs ["a" "b" "more..."]
  :label "*"
@@ -38,7 +38,7 @@
  :outputs [""]
  :parsed [:fn "Algorithm:Reduce" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
  :pos [198 -262]
- }
+ :selected true}
  "fovycyja7hcdb0" 
 {:inputs []
  :label "(sig rt60 d0 dmul) = arg"

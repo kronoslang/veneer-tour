@@ -1,4 +1,4 @@
-{:current-tab 14
+{:current-tab 0
  
  :manifest 
 {:dependencies 
@@ -10,7 +10,7 @@
  :version "0.1"}
  :origin 
 {:branch "default"
- :parents ["6b868411ef2bcdec841758360c49786ae98bf430"]
+ :parents ["b40001e9a5bc600e2ae50324e7022bcb76cf1ad2"]
  :service "bitbucket"
  :slug "kronoslang/veneer-tour"}
  :tabs ("tabs/draft.initial.edn" "tabs/Transpose.t3d9jawtw1aosj2.edn" "tabs/Phasor.jbfnj8trd5esa8i.edn" "tabs/Arpeggio.w0y66vnxb2qnfvy.edn" "tabs/Midi->Freq.30sadx3d4m7xvyk.edn" "tabs/Arpeggiator.vwa6wo5za5v55lm.edn" "tabs/Lag.lsiccf87hqwtzca.edn" "tabs/Parabolic-Wave.8pev1otzwrxrooa.edn" "tabs/PWM.19ve09z3lgfwnzk.edn" "tabs/Ping-Pong.iop6tqwisrma4g.edn" "tabs/Subdivide.sfbhlpekca3hco4.edn" "tabs/Bass-Voice.i7vlt4mn62nuy2q.edn" "tabs/Arp-Voice.85w79sae3dp5jar.edn" "tabs/Auto-Panner.4c6otllvu5jr069.edn" "tabs/Reverb.17n9ne056uq7wrg.edn" "tabs/Delay.5oxdam3nbi6v8yk.edn" "tabs/Mono-Verb.99t2cn19bb417lv.edn")}

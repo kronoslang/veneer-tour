@@ -44,8 +44,8 @@
  }
  "drejkpp499evzk5" 
 {:inputs []
- :label "(sig rt60 mix) = arg"
- :outputs ["sig" "rt60" "mix"]
+ :label "(sig rt60) = arg"
+ :outputs ["sig" "rt60"]
  :parsed "arg"
  :pos [-441 -404]
  }
@@ -70,7 +70,7 @@
  :label "Vector:Cons($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements..."]]]
- :pos [95 -425]
+ :pos [123 -345]
  :selected true}}
  :scale 1
  :scroll [0 0]}}
