@@ -2,12 +2,12 @@
  :identity "vwa6wo5za5v55lm"
  :patch
 {:cables
-{["5afxslwimv1o81x" 0] [:fixed "4efjocrbnpgpoj8" 2]
+{["5afxslwimv1o81x" 0] [:fixed "4efjocrbnpgpoj8" 0]
  ["5ii3kzrct5viali" 0] [:fixed "ebua6uzzxf9vnr2" 0]
  ["d9c3929w8vnlfgc" 0] [:fixed "ebua6uzzxf9vnr2" 0]
  ["d9c3929w8vnlfgc" 1] [:fixed "zvsb40z55dgjuql" 0]
- ["ebua6uzzxf9vnr2" 0] [:fixed "4efjocrbnpgpoj8" 0]
- ["ebua6uzzxf9vnr2" 1] [:fixed "4efjocrbnpgpoj8" 1]
+ ["ebua6uzzxf9vnr2" 0] [:fixed "4efjocrbnpgpoj8" 1]
+ ["ebua6uzzxf9vnr2" 1] [:fixed "4efjocrbnpgpoj8" 2]
  ["t4w9xjugknfg6ah" 0] [:fixed "d9c3929w8vnlfgc" 0]
  ["t4w9xjugknfg6ah" 1] [:fixed "c4hjon1oucofrb3" 0]
  ["zvsb40z55dgjuql" 0] [:fixed "5ii3kzrct5viali" 0]
@@ -16,58 +16,59 @@
 {"4efjocrbnpgpoj8" 
 {:eval :destructure
  :inputs []
- :label "(octaves seq phase) = arg"
- :outputs ["octaves" "seq" "phase"]
+ :label "(phase octaves seq) = arg"
+ :outputs ["phase" "octaves" "seq"]
  :parsed "arg"
- :pos [-458 -175]
- }
+ :pos [-406 -163]
+ :selected true}
  "5afxslwimv1o81x" 
 {:inputs ["sig"]
  :label "Control:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Control:Signal" [:tuple [:free-var "sig"]]]
- :pos [-287 -148]}
+ :pos [-235 -136]
+ }
  "5ii3kzrct5viali" 
 {:inputs ["tuple"]
  :label "Arity($tuple)"
  :outputs [""]
  :parsed [:fn "Arity" [:tuple [:free-var "tuple"]]]
- :pos [-257 -19]
+ :pos [-205 -7]
  }
  "c4hjon1oucofrb3" 
 {:inputs []
  :label "440"
  :outputs [""]
  :parsed [:float "440"]
- :pos [170 -116]
+ :pos [222 -104]
  }
  "d9c3929w8vnlfgc" 
 {:inputs ["vector" "index"]
  :label "Select($vector $index)"
  :outputs [""]
  :parsed [:fn "Select" [:tuple [:free-var "vector"] [:free-var "index"]]]
- :pos [8 66]
+ :pos [60 78]
  }
  "ebua6uzzxf9vnr2" 
 {:inputs ["N" "seq"]
  :label "Arpeggio($N $seq)"
  :outputs [""]
  :parsed [:fn "Arpeggio" [:tuple [:free-var "N"] [:free-var "seq"]]]
- :pos [-407 56]
+ :pos [-364 79]
  }
  "t4w9xjugknfg6ah" 
 {:inputs ["note-number" "a4"]
  :label "Midi->Freq($note-number $a4)"
  :outputs [""]
  :parsed [:fn "Midi->Freq" [:tuple [:free-var "note-number"] [:free-var "a4"]]]
- :pos [217 30]
+ :pos [269 42]
  }
  "zvsb40z55dgjuql" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-20 -22]
+ :pos [32 -10]
  }}
- :scale 1
+ :scale 1.6620008584716235
  :scroll [0 0]}}

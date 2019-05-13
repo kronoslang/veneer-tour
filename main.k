@@ -55,15 +55,15 @@ Midi->Freq(note-number a4) {
 nhvesaj0xjzo24yb-0
 }
 
-Arpeggiator(octaves seq phase) {
-(nebua6uzzxf9vnr2-0) = Arpeggio(n4efjocrbnpgpoj8-0 n4efjocrbnpgpoj8-1)
+Arpeggiator(phase octaves seq) {
+(nebua6uzzxf9vnr2-0) = Arpeggio(n4efjocrbnpgpoj8-1 n4efjocrbnpgpoj8-2)
 (n5ii3kzrct5viali-0) = Arity(nebua6uzzxf9vnr2-0)
 (nzvsb40z55dgjuql-0) = (n5ii3kzrct5viali-0 * n5afxslwimv1o81x-0)
 (nd9c3929w8vnlfgc-0) = Select(nebua6uzzxf9vnr2-0 nzvsb40z55dgjuql-0)
 (n4efjocrbnpgpoj8-0 n4efjocrbnpgpoj8-1 n4efjocrbnpgpoj8-2) = arg
 (nt4w9xjugknfg6ah-0) = Midi->Freq(nd9c3929w8vnlfgc-0 nc4hjon1oucofrb3-0)
 (nc4hjon1oucofrb3-0) = 440
-(n5afxslwimv1o81x-0) = Control:Signal(n4efjocrbnpgpoj8-2)
+(n5afxslwimv1o81x-0) = Control:Signal(n4efjocrbnpgpoj8-0)
 nt4w9xjugknfg6ah-0
 }
 

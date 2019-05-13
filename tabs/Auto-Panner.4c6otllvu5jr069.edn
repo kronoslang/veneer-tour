@@ -16,14 +16,14 @@
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-388 -397]
+ :pos [-199 -9]
  }
  "9o2djwb9e1ui5yj" 
 {:inputs ["b"]
  :label "1 -"
  :outputs [""]
  :parsed [:infix [:float "1"] "-" [:free-var "b"]]
- :pos [-34 -401]
+ :pos [155 -13]
  }
  "bgt1apghq4ku3b2" 
 {:flip-y true
@@ -31,14 +31,14 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [109 -477]
+ :pos [298 -89]
  }
  "brdcah2rl2h8rdb" 
 {:inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-236 -397]
+ :pos [-47 -9]
  }
  "n89xiyww4dkle27" 
 {:ephemeral-inputs #{"elements1" "elements2"}
@@ -46,12 +46,14 @@
  :label "Vector:Cons($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements..."]]]
- :pos [15 -294]
+ :pos [204 94]
  }
  "qof6cpbkk039kdj" 
 {:inputs []
  :label "(sig mod-freq) = arg"
  :outputs ["sig" "mod-freq"]
  :parsed "arg"
- :pos [-510 -468]
- }}}}
+ :pos [-321 -80]
+ }}
+ :scale 1.338832389038885
+ :scroll [0 0]}}

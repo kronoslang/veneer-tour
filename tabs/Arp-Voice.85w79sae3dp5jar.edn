@@ -16,21 +16,21 @@
  :label "Parabolic-Wave($freq)"
  :outputs [""]
  :parsed [:fn "Parabolic-Wave" [:tuple [:free-var "freq"]]]
- :pos [-257 -254]
+ :pos [-5 -126]
  }
  "2vlslf58twro06v" 
 {:inputs ["sig" "coef"]
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [-354 -340]
+ :pos [-102 -212]
  }
  "60wbldfyx35jpgm" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-395 -48]
+ :pos [-143 80]
  }
  "6s854ryzdxz2n6k" 
 {:eval :destructure
@@ -38,14 +38,14 @@
  :label "(sig) = arg"
  :outputs ["sig"]
  :parsed "arg"
- :pos [-558 -440]
+ :pos [-306 -312]
  }
  "9jo82fqhm5zcf22" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [-406 -438]
+ :pos [-154 -310]
  }
  "9qqvlz52l9ab3uq" 
 {:flip-y true
@@ -53,21 +53,21 @@
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [-39 -142]
+ :pos [213 -14]
  }
  "unqjx4uaj7lfbur" 
 {:inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-243 -48]
+ :pos [9 80]
  }
  "xts3uiirm0rncix" 
 {:inputs []
  :label "0.001"
  :outputs [""]
  :parsed [:float "0.001"]
- :pos [-546 -48]
+ :pos [-294 80]
  }}
- :scale 1
+ :scale 1.4338654134756366
  :scroll [0 0]}}

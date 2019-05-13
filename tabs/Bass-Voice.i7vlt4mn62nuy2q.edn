@@ -22,7 +22,7 @@
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-289 -91]
+ :pos [-278 -24]
  }
  "3f15whwxihu0c24" 
 {:ephemeral-inputs #{"more1" "more2"}
@@ -30,28 +30,28 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more2"] [:free-var "more..."]]
- :pos [65 36]
+ :pos [76 103]
  }
  "45p9ywsvt2xcqxm" 
 {:inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-134 -59]
+ :pos [-123 8]
  }
  "6jw8vp6je1e1bp" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [68 -281]
+ :pos [79 -214]
  }
  "9n6lwheh74q281" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [-78 -328]
+ :pos [-67 -261]
  }
  "bht48z5l8wt1mle" 
 {:eval :destructure
@@ -59,14 +59,14 @@
  :label "freq = arg"
  :outputs ["freq"]
  :parsed "arg"
- :pos [-441 -257]
- :selected true}
+ :pos [-430 -190]
+ }
  "dqw7d3zds9xjjhg" 
 {:inputs ["sig" "coef"]
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [-135 -224]
+ :pos [-124 -157]
  }
  "fkb4hss14lm28g4" 
 {:flip-y true
@@ -74,35 +74,35 @@
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [354 -167]
+ :pos [365 -100]
  }
  "mla2nj287a1vv4x" 
 {:inputs ["freq" "width"]
  :label "PWM($freq $width)"
  :outputs [""]
  :parsed [:fn "PWM" [:tuple [:free-var "freq"] [:free-var "width"]]]
- :pos [181 -163]
+ :pos [192 -96]
  }
  "odh5icwjmcez9wr" 
 {:inputs []
  :label "0.02"
  :outputs [""]
  :parsed [:float "0.02"]
- :pos [-323 -404]
+ :pos [-312 -337]
  }
  "sixncu0gz1mkqm0" 
 {:inputs ["a"]
  :label "+ 0.01"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:float "0.01"]]
- :pos [232 35]
+ :pos [243 102]
  }
  "yo5bpu5a9chj9ew" 
 {:inputs []
  :label "0.03"
  :outputs [""]
  :parsed [:float "0.03"]
- :pos [-420 -85]
+ :pos [-409 -18]
  }}
- :scale 1
+ :scale 1.4169094370388835
  :scroll [0 0]}}
