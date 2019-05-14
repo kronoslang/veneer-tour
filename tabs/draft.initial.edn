@@ -141,7 +141,7 @@
 {:inputs []
  :label "0.5 -o- 10"
  :outputs [""]
- :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.30930948225603194]
+ :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.7461672510925337]
  :pos [166 -511]
  }
  "l00n9pc7qcrwx0g" 
