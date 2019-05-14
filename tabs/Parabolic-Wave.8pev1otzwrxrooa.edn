@@ -16,50 +16,43 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [98 -15]
- }
+ :pos [98 -15]}
  "8pm69st85s011c4" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-211 -134]
- }
+ :pos [-211 -134]}
  "9qj344tnq54d75n" 
 {:inputs ["a"]
  :label "* 2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "2"]]
- :pos [-128 -15]
- }
+ :pos [-128 -15]}
  "edp8hktjh8ltei0" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [220 -105]
- }
+ :pos [220 -105]}
  "ikg50jm52pwxmtk" 
 {:inputs ["a"]
  :label "- 0.5"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "0.5"]]
- :pos [175 31]
- }
+ :pos [175 31]}
  "khtag0at6be2pfh" 
 {:inputs ["a"]
  :label "- 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "1"]]
- :pos [-15 -15]
- }
+ :pos [-15 -15]}
  "zbb4crogb1j8sdg" 
 {:eval :destructure
  :inputs []
  :label "(freq) = arg"
  :outputs ["freq"]
  :parsed "arg"
- :pos [-327 -129]
- }}
+ :pos [-327 -129]}}
  :scale 1.522803164613181
  :scroll [0 0]}}

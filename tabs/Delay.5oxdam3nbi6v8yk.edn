@@ -16,29 +16,25 @@
  :label "rbuf($order $sig~)"
  :outputs [""]
  :parsed [:fn "rbuf" [:tuple [:free-var "order"] [:free-var "sig~"]]]
- :pos [-21 -12]
- }
+ :pos [-21 -12]}
  "bth2lr1oj3q5qxz" 
 {:inputs []
  :label "(sig len feedback) = arg"
  :outputs ["sig" "len" "feedback"]
  :parsed "arg"
- :pos [-304 -100]
- }
+ :pos [-304 -100]}
  "dmok8lhghvin91k" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [115 -18]
- }
+ :pos [115 -18]}
  "fwfysl9ocv7xdmg" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [247 42]
- }
+ :pos [247 42]}
  "owk7xv7feo935nk" 
 {:inputs ["a" "b" "more..."]
  :label "-"

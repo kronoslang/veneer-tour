@@ -8,7 +8,11 @@
  ["2vlslf58twro06v" 1] [:fixed "9jo82fqhm5zcf22" 0]
  ["60wbldfyx35jpgm" 0] [:fixed "xts3uiirm0rncix" 0]
  ["9qqvlz52l9ab3uq" 0] [:fixed "25yd618oqou1sv" 0]
- ["9qqvlz52l9ab3uq" 1] [:fixed "unqjx4uaj7lfbur" 0]
+ ["9qqvlz52l9ab3uq" 1] [:fixed "pszyxa8nu6g2de" 0]
+ ["pszyxa8nu6g2de" 0] [:fixed "unqjx4uaj7lfbur" 0]
+ ["pszyxa8nu6g2de" 1] [:fixed "unqjx4uaj7lfbur" 0]
+ ["pszyxa8nu6g2de" 2] [:fixed "unqjx4uaj7lfbur" 0]
+ ["pszyxa8nu6g2de" 3] [:fixed "unqjx4uaj7lfbur" 0]
  ["unqjx4uaj7lfbur" 0] [:fixed "60wbldfyx35jpgm" 0]}
  :nodes
 {"25yd618oqou1sv" 
@@ -16,36 +20,36 @@
  :label "Parabolic-Wave($freq)"
  :outputs [""]
  :parsed [:fn "Parabolic-Wave" [:tuple [:free-var "freq"]]]
- :pos [-5 -126]
+ :pos [48 -109]
  }
  "2vlslf58twro06v" 
 {:inputs ["sig" "coef"]
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [-102 -212]
+ :pos [-49 -195]
  }
  "60wbldfyx35jpgm" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-143 80]
- }
+ :pos [-238 50]
+ :selected true}
  "6s854ryzdxz2n6k" 
 {:eval :destructure
  :inputs []
  :label "(sig) = arg"
  :outputs ["sig"]
  :parsed "arg"
- :pos [-306 -312]
+ :pos [-253 -295]
  }
  "9jo82fqhm5zcf22" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [-154 -310]
+ :pos [-101 -293]
  }
  "9qqvlz52l9ab3uq" 
 {:flip-y true
@@ -53,21 +57,28 @@
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [213 -14]
+ :pos [266 3]
  }
+ "pszyxa8nu6g2de" 
+{:ephemeral-inputs #{"more1" "more2"}
+ :inputs ["a" "b" "more1" "more2" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more2"] [:free-var "more..."]]
+ :pos [136 90]}
  "unqjx4uaj7lfbur" 
 {:inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [9 80]
- }
+ :pos [-86 50]
+ :selected true}
  "xts3uiirm0rncix" 
 {:inputs []
  :label "0.001"
  :outputs [""]
  :parsed [:float "0.001"]
- :pos [-294 80]
- }}
- :scale 1.4338654134756366
+ :pos [-389 50]
+ :selected true}}
+ :scale 1.1445971454419728
  :scroll [0 0]}}
