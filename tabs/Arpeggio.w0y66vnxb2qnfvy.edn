@@ -17,44 +17,44 @@
  :label "0"
  :outputs [""]
  :parsed [:float "0"]
- :pos [24 -231]}
+ :pos [-1 -279]}
  "49qkoji1nfhg579" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["set1" "set..."]
  :label "Algorithm:Flatten($set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Flatten" [:tuple [:free-var "set1"] [:free-var "set..."]]]
- :pos [306 4]}
+ :pos [281 -44]}
  "aiiytu8et2w8xy2" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["func" "set1" "set..."]
  :label "Algorithm:Map($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [160 2]}
+ :pos [135 -46]}
  "fzqh1avbfaiq8zj" 
 {:inputs ["seq" "transp"]
  :label "Transpose($seq $transp)"
  :outputs [""]
  :parsed [:fn "Transpose" [:tuple [:free-var "seq"] [:free-var "transp"]]]
- :pos [-137 114]}
+ :pos [-162 66]}
  "if754m7a7al27jt" 
 {:inputs ["count" "iterator" "seed"]
  :label "Algorithm:Expand($count $iterator $seed)"
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
- :pos [-19 -136]}
+ :pos [-44 -184]}
  "kfxhhjrab7b2ovu" 
 {:inputs []
  :label "(+ 12)"
  :outputs [""]
  :parsed [:tuple [:section-right "+" [:float "12"]]]
- :pos [-164 -231]}
+ :pos [-189 -279]}
  "qck38zbi5wzg4aq" 
 {:inputs []
  :label "(N seq) = arg"
  :outputs ["N" "seq"]
  :parsed "arg"
- :pos [-277 46]}}
- :scale 1.5540209325935397
+ :pos [-302 -2]}}
+ :scale 1.2527249602059412
  :scroll [0 0]}}

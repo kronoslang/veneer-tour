@@ -85,10 +85,10 @@ nedp8hktjh8ltei0-0
 PWM(freq width) {
 (n2q7bjv8vmsyj99d-0 n2q7bjv8vmsyj99d-1) = arg
 (nbzs9cgu88vusa3o-0) = (n2q7bjv8vmsyj99d-1 > nmdiuvla9wt9v49u-0)
-(ncuy9y6pretrgu8s-0) = -0.5
+(ncuy9y6pretrgu8s-0) = -0.25
 (nebzup1mibzzh3m5-0) = Algorithm:Choose(nbzs9cgu88vusa3o-0 nmiamdxmgbt6s2gj-0 ncuy9y6pretrgu8s-0)
 (nmdiuvla9wt9v49u-0) = Phasor(n2q7bjv8vmsyj99d-0)
-(nmiamdxmgbt6s2gj-0) = 0.5
+(nmiamdxmgbt6s2gj-0) = 0.25
 (nz8lbro8sj8ykm3h-0) = nebzup1mibzzh3m5-0
 nz8lbro8sj8ykm3h-0
 }
@@ -111,30 +111,45 @@ nm6rwx9vcdepnnr-0
 Bass-Voice(freq) {
 (ndqw7d3zds9xjjhg-0) = Lag(nbht48z5l8wt1mle-0 nodh5icwjmcez9wr-0)
 (nmla2nj287a1vv4x-0) = PWM(ndqw7d3zds9xjjhg-0 n6jw8vp6je1e1bp-0)
+(nmjwvf8cpq2r706i-0) = (ndqw7d3zds9xjjhg-0 * 1.01)
+(n0ce7at3hp2jhcgt-0) = Vector:Cons(nhccvkfj44mfdh5z-0 n8frsrl9txeg5wia-0 )
+(nwpe83va08cd9dpr-0) = PWM(nmjwvf8cpq2r706i-0 n6jw8vp6je1e1bp-0)
 (n1k75wcdzwfkuqpv-0) = Phasor(nyo5bpu5a9chj9ew-0)
-(nsixncu0gz1mkqm0-0) = (n3f15whwxihu0c24-0 + 0.01)
+(nsixncu0gz1mkqm0-0) = (n3f15whwxihu0c24-0 + 0.104)
 (n9n6lwheh74q281-0) = 0.1
 (n6jw8vp6je1e1bp-0) = Phasor(n9n6lwheh74q281-0)
 (nfkb4hss14lm28g4-0) = Lag(nmla2nj287a1vv4x-0 nsixncu0gz1mkqm0-0)
-(n3f15whwxihu0c24-0) = (n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0)
+(n9ylimte805h9pa8-0) = 0.8
+(n3f15whwxihu0c24-0) = (n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0 * n45p9ywsvt2xcqxm-0 * n9ylimte805h9pa8-0)
+(n8frsrl9txeg5wia-0) = Lag(n16z33jpv7j8ylf-0 nsixncu0gz1mkqm0-0)
 (nyo5bpu5a9chj9ew-0) = 0.03
+(n16z33jpv7j8ylf-0) = Lag(nwpe83va08cd9dpr-0 nsixncu0gz1mkqm0-0)
 (nbht48z5l8wt1mle-0) = arg
+(nhccvkfj44mfdh5z-0) = Lag(nfkb4hss14lm28g4-0 nsixncu0gz1mkqm0-0)
 (nodh5icwjmcez9wr-0) = 0.02
 (n45p9ywsvt2xcqxm-0) = Ping-Pong(n1k75wcdzwfkuqpv-0)
-nfkb4hss14lm28g4-0
+n0ce7at3hp2jhcgt-0
 }
 
 Arp-Voice(sig) {
 (n9qqvlz52l9ab3uq-0) = Lag(n25yd618oqou1sv-0 npszyxa8nu6g2de-0)
-(n25yd618oqou1sv-0) = Parabolic-Wave(n2vlslf58twro06v-0)
+(n25yd618oqou1sv-0) = Parabolic-Wave(nb6bhj5c7c3z122i-0)
 (nxts3uiirm0rncix-0) = 0.001
-(npszyxa8nu6g2de-0) = (nunqjx4uaj7lfbur-0 * nunqjx4uaj7lfbur-0 * nunqjx4uaj7lfbur-0 * nunqjx4uaj7lfbur-0)
+(n353zjt798r3n5km-0) = Phasor(nr87btwwkf6d6mj0-0)
+(nkpy6xjdtmzqczex-0) = 0.105
+(nb6bhj5c7c3z122i-0) = (n6o27yxfdf7gjhkq-0 * n2vlslf58twro06v-0)
+(npszyxa8nu6g2de-0) = (nunqjx4uaj7lfbur-0 * nunqjx4uaj7lfbur-0 * nunqjx4uaj7lfbur-0 * nunqjx4uaj7lfbur-0 * nkpy6xjdtmzqczex-0)
 (n60wbldfyx35jpgm-0) = Phasor(nxts3uiirm0rncix-0)
 (n6s854ryzdxz2n6k-0) = arg
 (nunqjx4uaj7lfbur-0) = Ping-Pong(n60wbldfyx35jpgm-0)
 (n2vlslf58twro06v-0) = Lag(n6s854ryzdxz2n6k-0 n9jo82fqhm5zcf22-0)
+(n6o27yxfdf7gjhkq-0) = (nxmz8zwlt2gap3at-0 + 1)
+(n0kl3pxzmn49bz6t-0) = n9qqvlz52l9ab3uq-0
+(nr87btwwkf6d6mj0-0) = 5.5
 (n9jo82fqhm5zcf22-0) = 0.1
-n9qqvlz52l9ab3uq-0
+(nzv62w6kc0gw8ls7-0) = Ping-Pong(n353zjt798r3n5km-0)
+(nxmz8zwlt2gap3at-0) = (nzv62w6kc0gw8ls7-0 * 0.019)
+n0kl3pxzmn49bz6t-0
 }
 
 Auto-Panner(sig mod-freq) {
