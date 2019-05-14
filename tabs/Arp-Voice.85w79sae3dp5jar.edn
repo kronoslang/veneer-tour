@@ -11,9 +11,10 @@
  ["60wbldfyx35jpgm" 0] [:fixed "xts3uiirm0rncix" 0]
  ["6o27yxfdf7gjhkq" 0] [:fixed "xmz8zwlt2gap3at" 0]
  ["9qqvlz52l9ab3uq" 0] [:fixed "25yd618oqou1sv" 0]
- ["9qqvlz52l9ab3uq" 1] [:fixed "pszyxa8nu6g2de" 0]
+ ["9qqvlz52l9ab3uq" 1] [:fixed "ps49h2vrv9tk8xz" 0]
  ["b6bhj5c7c3z122i" 0] [:fixed "6o27yxfdf7gjhkq" 0]
  ["b6bhj5c7c3z122i" 1] [:fixed "2vlslf58twro06v" 0]
+ ["ps49h2vrv9tk8xz" 0] [:fixed "pszyxa8nu6g2de" 0]
  ["pszyxa8nu6g2de" 0] [:fixed "unqjx4uaj7lfbur" 0]
  ["pszyxa8nu6g2de" 1] [:fixed "unqjx4uaj7lfbur" 0]
  ["pszyxa8nu6g2de" 2] [:fixed "unqjx4uaj7lfbur" 0]
@@ -29,7 +30,7 @@
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
  :pos [499 -40]
- :selected true}
+ }
  "25yd618oqou1sv" 
 {:inputs ["freq"]
  :label "Parabolic-Wave($freq)"
@@ -102,14 +103,21 @@
  :parsed [:number-widget :float "v0en1rs6iseckli" "0.105" ""]
  :pos [137 -5]
  }
+ "ps49h2vrv9tk8xz" 
+{:inputs ["a"]
+ :label "+ 0.05"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "0.05"]]
+ :pos [370 175]
+ }
  "pszyxa8nu6g2de" 
 {:ephemeral-inputs #{"more1" "more2" "more3"}
  :inputs ["a" "b" "more1" "more2" "more3" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more2"] [:free-var "more3"] [:free-var "more..."]]
- :pos [249 127]
- }
+ :pos [168 176]
+ :selected true}
  "r87btwwkf6d6mj0" 
 {:inputs []
  :label "5.5"
@@ -133,9 +141,9 @@
  }
  "xts3uiirm0rncix" 
 {:inputs []
- :label "0.001"
+ :label "0.01"
  :outputs [""]
- :parsed [:float "0.001"]
+ :parsed [:float "0.01"]
  :pos [-276 87]
  }
  "zv62w6kc0gw8ls7" 
@@ -143,6 +151,7 @@
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-301 -13]}}
+ :pos [-301 -13]
+ }}
  :scale 1.1445971454419728
  :scroll [0 0]}}

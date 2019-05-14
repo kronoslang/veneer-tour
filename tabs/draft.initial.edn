@@ -35,7 +35,7 @@
  :label "Subdivide"
  :outputs [""]
  :parsed [:fn "Subdivide" [:tuple [:free-var "a"] [:free-var "in2"]]]
- :pos [-477 -151]
+ :pos [-477 -158]
  }
  "1q83t8as5g4j4em" 
 {:flip-y true
@@ -72,7 +72,7 @@
  :label "Ping-Pong"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-302 -195]
+ :pos [-291 -158]
  }
  "7tcgzzve8aw0md5" 
 {:inputs []
@@ -136,7 +136,7 @@
  :outputs [""]
  :parsed [:invariant "5"]
  :pos [-207 -262]
- :selected true}
+ }
  "kxy4guqjw0bg49i" 
 {:inputs []
  :label "0.5 -o- 10"
@@ -163,7 +163,7 @@
  :label "Reverb($sig $rt60)"
  :outputs [""]
  :parsed [:fn "Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"]]]
- :pos [382 -286]
+ :pos [340 -262]
  }}
  :scale 0.7532178216146205
  :scroll [0 0]}}

@@ -132,9 +132,9 @@ n0ce7at3hp2jhcgt-0
 }
 
 Arp-Voice(sig) {
-(n9qqvlz52l9ab3uq-0) = Lag(n25yd618oqou1sv-0 npszyxa8nu6g2de-0)
+(n9qqvlz52l9ab3uq-0) = Lag(n25yd618oqou1sv-0 nps49h2vrv9tk8xz-0)
 (n25yd618oqou1sv-0) = Parabolic-Wave(nb6bhj5c7c3z122i-0)
-(nxts3uiirm0rncix-0) = 0.001
+(nxts3uiirm0rncix-0) = 0.01
 (n353zjt798r3n5km-0) = Phasor(nr87btwwkf6d6mj0-0)
 (nkpy6xjdtmzqczex-0) = 0.105
 (nb6bhj5c7c3z122i-0) = (n6o27yxfdf7gjhkq-0 * n2vlslf58twro06v-0)
@@ -148,6 +148,7 @@ Arp-Voice(sig) {
 (nr87btwwkf6d6mj0-0) = 5.5
 (n9jo82fqhm5zcf22-0) = 0.1
 (nzv62w6kc0gw8ls7-0) = Ping-Pong(n353zjt798r3n5km-0)
+(nps49h2vrv9tk8xz-0) = (npszyxa8nu6g2de-0 + 0.05)
 (nxmz8zwlt2gap3at-0) = (nzv62w6kc0gw8ls7-0 * 0.019)
 n0kl3pxzmn49bz6t-0
 }
