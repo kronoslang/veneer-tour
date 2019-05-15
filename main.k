@@ -34,14 +34,8 @@ ng20yedveocgvlvy-0
 
 Arpeggio(N seq) {
 ;; repeats 'sequence' 'N' times, transposing each successive sequence up by 12 semitones. following that, the arpeggio is repeated backwards.
-(n44pdx6xgicmh2ej-0) = 0
-(n49qkoji1nfhg579-0) = Algorithm:Flatten(naiiytu8et2w8xy2-0 )
-(naiiytu8et2w8xy2-0) = Algorithm:Map(nfzqh1avbfaiq8zj-0 nif754m7a7al27jt-0 )
-(nfzqh1avbfaiq8zj-0) = (transp) => ( Transpose(nqck38zbi5wzg4aq-1 transp) ) 
-(nif754m7a7al27jt-0) = Algorithm:Expand(nqck38zbi5wzg4aq-0 nkfxhhjrab7b2ovu-0 n44pdx6xgicmh2ej-0)
-(nkfxhhjrab7b2ovu-0) = (+ 12)
-(nqck38zbi5wzg4aq-0 nqck38zbi5wzg4aq-1) = arg
-n49qkoji1nfhg579-0
+() = Finally, [flatten](#49qkoji1nfhg579|eval) everything to a single list.
+
 }
 
 Arpeggiator(phase octaves seq) {

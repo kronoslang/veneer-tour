@@ -18,61 +18,81 @@
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-64 32]}
+ :pos [-64 32]
+ }
  "81ya0grq22e2hs5" 
 {:inputs []
  :label "; This is a cyclic connection. Each sample\nis the sum of the previous output and the fraction frequency / samplerate."
  :outputs []
  :parsed [:comment "This is a cyclic connection. Each sample\nis the sum of the previous output and the fraction frequency / samplerate."]
- :pos [-87 145]}
+ :pos [53 152]
+ }
  "ajdea0boi6956k8" 
 {:inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [203 61]}
+ :pos [203 61]
+ }
  "dkiuofz795bgiea" 
 {:inputs ["x"]
  :label "Fraction($x)"
  :outputs [""]
  :parsed [:fn "Fraction" [:tuple [:free-var "x"]]]
- :pos [26 61]}
+ :pos [65 73]
+ }
  "g20yedveocgvlvy" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
  :pos [352 124]
- :selected true}
+ }
  "ja45r6d488giop" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "freq = arg"
  :outputs ["freq"]
  :parsed "arg"
- :pos [-419 -71]}
+ :pos [-419 -71]
+ }
  "kjh3qi6d1w5w7zz" 
-{:inputs ["a" "b" "more..."]
+{:color 3
+ :inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-306 -71]}
+ :pos [-306 -71]
+ }
  "lxyk22kq4gzgksk" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "Gen:Rate()"
  :outputs [""]
  :parsed [:fn "Gen:Rate" [:tuple]]
- :pos [-419 -180]}
+ :pos [-419 -180]
+ }
  "n1ecu32t3u2lezq" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "; divide frequency by audio rate, and upsample to audio signal"
  :outputs []
  :parsed [:comment "divide frequency by audio rate, and upsample to audio signal"]
- :pos [-277 -193]}
+ :pos [-122 -228]
+ }
+ "usbn8kcw3aked9z" 
+{:inputs []
+ :label "; The actual length of the z-1 unit delay is determined by the incoming signal rate, which is upsampled to audi ohere."
+ :outputs []
+ :parsed [:comment "The actual length of the z-1 unit delay is determined by the incoming signal rate, which is upsampled to audi ohere."]
+ :pos [261 -105]
+ }
  "wqanes0pc21xvsy" 
 {:inputs ["sig"]
  :label "Gen:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Gen:Signal" [:tuple [:free-var "sig"]]]
- :pos [-231 -68]}}
+ :pos [-180 -31]
+ }}
  :scale 1
  :scroll [0 0]}}

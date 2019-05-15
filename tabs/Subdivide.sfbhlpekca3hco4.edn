@@ -12,20 +12,21 @@
  :label "(a in2) = arg"
  :outputs ["a" "in2"]
  :parsed "arg"
- :pos [-215 -175]}
+ :pos [-215 -175]
+ }
  "h533y0ti6542h63" 
 {:inputs ["a" "in2"]
  :label "($a * $in2)"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "in2"]]
  :pos [-65 25]
- :selected true}
+ }
  "m6rwx9vcdepnnr" 
 {:inputs ["x"]
  :label "Fraction($x)"
  :outputs [""]
  :parsed [:fn "Fraction" [:tuple [:free-var "x"]]]
  :pos [68 25]
- :selected true}}
+ }}
  :scale 1.6274747160620755
  :scroll [0 0]}}

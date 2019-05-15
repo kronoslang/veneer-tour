@@ -17,44 +17,79 @@
  :label "0"
  :outputs [""]
  :parsed [:float "0"]
- :pos [-1 -279]}
+ :pos [-163 -207]
+ }
  "49qkoji1nfhg579" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["set1" "set..."]
  :label "Algorithm:Flatten($set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Flatten" [:tuple [:free-var "set1"] [:free-var "set..."]]]
- :pos [281 -44]}
+ :pos [197 172]
+ :selected true}
  "aiiytu8et2w8xy2" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["func" "set1" "set..."]
  :label "Algorithm:Map($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [135 -46]}
+ :pos [47 97]
+ }
+ "bmnbgfk0o7i5lmu" 
+{:inputs []
+ :label ";Here we make a multi-octave arpeggio.\n\n\nCompute the [base transpositions!](#if754m7a7al27jt|eval)."
+ :outputs []
+ :parsed [:comment "Here we make a multi-octave arpeggio.\n\n\nCompute the [base transpositions!](#if754m7a7al27jt|eval)."]
+ :pos [85 -236]
+ }
+ "fmwk3bjvfpgoarq" 
+{:inputs []
+ :label "; This node has an unplugged input `transp`.\n\n\nIt outputs a function that accepts a parameter\nfor each unplugged input."
+ :outputs []
+ :parsed [:comment "This node has an unplugged input `transp`.\n\n\nIt outputs a function that accepts a parameter\nfor each unplugged input."]
+ :pos [-222 200]
+ }
  "fzqh1avbfaiq8zj" 
 {:inputs ["seq" "transp"]
  :label "Transpose($seq $transp)"
  :outputs [""]
  :parsed [:fn "Transpose" [:tuple [:free-var "seq"] [:free-var "transp"]]]
- :pos [-162 66]}
+ :pos [-211 142]
+ }
  "if754m7a7al27jt" 
 {:inputs ["count" "iterator" "seed"]
  :label "Algorithm:Expand($count $iterator $seed)"
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
- :pos [-44 -184]}
+ :pos [-206 -112]
+ }
  "kfxhhjrab7b2ovu" 
 {:inputs []
  :label "(+ 12)"
  :outputs [""]
  :parsed [:tuple [:section-right "+" [:float "12"]]]
- :pos [-189 -279]}
+ :pos [-351 -207]
+ }
+ "nol5qq5ak65nsrr" 
+{:inputs []
+ :label ";Finally, [flatten](#49qkoji1nfhg579|eval) everything to a single list."
+ :outputs []
+ :parsed [:comment "Finally, [flatten](#49qkoji1nfhg579|eval) everything to a single list."]
+ :pos [271 240]
+ }
  "qck38zbi5wzg4aq" 
 {:inputs []
  :label "(N seq) = arg"
  :outputs ["N" "seq"]
  :parsed "arg"
- :pos [-302 -2]}}
- :scale 1.2527249602059412
+ :pos [-464 70]
+ }
+ "qjpq2867orljut1" 
+{:inputs []
+ :label ";Map is a higher order function.\n\n\nIt [applies Transpose](#aiiytu8et2w8xy2|eval) to each base transposition."
+ :outputs []
+ :parsed [:comment "Map is a higher order function.\n\n\nIt [applies Transpose](#aiiytu8et2w8xy2|eval) to each base transposition."]
+ :pos [262 -77]
+ }}
+ :scale 1.0627699869924385
  :scroll [0 0]}}

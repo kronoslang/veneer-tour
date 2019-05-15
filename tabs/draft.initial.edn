@@ -53,7 +53,7 @@
  :outputs []
  :parsed [:comment "move around by swiping\nor right-button-dragging \n\nanywhere on the blank canvas."]
  :pos [-33 264]
- :selected true}
+ }
  "3to4eph0jiegbzd" 
 {:ephemeral-inputs #{"more1"}
  :inputs ["a" "b" "more1" "more..."]
@@ -138,12 +138,12 @@
  :outputs [""]
  :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
  :pos [-114 -149]
- }
+ :selected true}
  "e95df0pr8i1h0hz" 
 {:inputs []
- :label ";## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained \n\npiece of music. Both the sequencing\nand synthesis are implemented from \n\nscratch on the tabs of this workspace.\n\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."
+ :label ";## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained piece of music. Both the sequencing\nand synthesis are implemented from scratch on the tabs of this workspace.\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."
  :outputs []
- :parsed [:comment "## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained \n\npiece of music. Both the sequencing\nand synthesis are implemented from \n\nscratch on the tabs of this workspace.\n\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."]
+ :parsed [:comment "## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained piece of music. Both the sequencing\nand synthesis are implemented from scratch on the tabs of this workspace.\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."]
  :pos [544 -408]
  }
  "fq421ot7f6px8y" 
