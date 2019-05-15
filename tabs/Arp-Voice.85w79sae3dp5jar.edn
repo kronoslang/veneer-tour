@@ -29,112 +29,172 @@
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [499 -40]}
+ :pos [456 41]
+ }
  "25yd618oqou1sv" 
 {:inputs ["freq"]
  :label "Parabolic-Wave($freq)"
  :outputs [""]
  :parsed [:fn "Parabolic-Wave" [:tuple [:free-var "freq"]]]
- :pos [161 -72]}
+ :pos [218 -100]
+ }
+ "2tvazqy2vub87p4" 
+{:color 3
+ :inputs []
+ :label "; modulating low-pass filter to create variable timbre"
+ :outputs []
+ :parsed [:comment "modulating low-pass filter to create variable timbre"]
+ :pos [-187 168]
+ }
  "2vlslf58twro06v" 
 {:inputs ["sig" "coef"]
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [64 -158]}
+ :pos [-77 -166]
+ }
  "353zjt798r3n5km" 
-{:inputs ["freq"]
+{:color 2
+ :inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-375 -80]}
+ :pos [-437 -103]
+ }
+ "5og61douo3vu6c3" 
+{:inputs []
+ :label ";[Parabolic Oscillator](#6)"
+ :outputs []
+ :parsed [:comment "[Parabolic Oscillator](#6)"]
+ :pos [215 -47]
+ :selected true}
  "60wbldfyx35jpgm" 
-{:inputs ["freq"]
+{:color 3
+ :inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-125 87]}
+ :pos [-199 111]
+ }
+ "66fztswtecticzt" 
+{:color 2
+ :inputs []
+ :label "; Vibrato modulation on pitch"
+ :outputs []
+ :parsed [:comment "Vibrato modulation on pitch"]
+ :pos [-157 6]
+ }
  "6o27yxfdf7gjhkq" 
-{:inputs ["a"]
+{:color 2
+ :inputs ["a"]
  :label "+ 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:float "1"]]
- :pos [-40 -80]}
+ :pos [-23 -46]
+ }
  "6s854ryzdxz2n6k" 
 {:eval :destructure
  :inputs []
  :label "(sig) = arg"
  :outputs ["sig"]
  :parsed "arg"
- :pos [-140 -258]}
+ :pos [-286 -141]
+ }
  "9jo82fqhm5zcf22" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [12 -256]}
+ :pos [-277 -230]
+ }
  "9qqvlz52l9ab3uq" 
-{:flip-y true
+{:color 3
+ :flip-y true
  :inputs ["sig" "coef"]
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [379 40]}
+ :pos [342 45]
+ }
  "b6bhj5c7c3z122i" 
-{:inputs ["a" "b" "more..."]
+{:color 2
+ :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [83 -80]}
- "kpy6xjdtmzqczex" 
+ :pos [68 -99]
+ }
+ "hmsrql8u34ghbsr" 
 {:inputs []
+ :label ";## The Arpeggio Voice ##\n\n\nVintage electro organ with vibrato"
+ :outputs []
+ :parsed [:comment "## The Arpeggio Voice ##\n\n\nVintage electro organ with vibrato"]
+ :pos [380 -245]
+ }
+ "kpy6xjdtmzqczex" 
+{:color 3
+ :inputs []
  :label "0.5"
  :outputs [""]
  :parsed [:number-widget :float "v0en1rs6iseckli" "0.105" ""]
- :pos [137 -5]}
+ :pos [117 60]
+ }
  "ps49h2vrv9tk8xz" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "+ 0.05"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:float "0.05"]]
- :pos [370 175]}
+ :pos [273 116]
+ }
  "pszyxa8nu6g2de" 
-{:ephemeral-inputs #{"more1" "more2" "more3"}
+{:color 3
+ :ephemeral-inputs #{"more1" "more2" "more3"}
  :inputs ["a" "b" "more1" "more2" "more3" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more2"] [:free-var "more3"] [:free-var "more..."]]
- :pos [168 176]
- :selected true}
+ :pos [131 181]
+ }
  "r87btwwkf6d6mj0" 
-{:inputs []
+{:color 2
+ :inputs []
  :label "5.5"
  :outputs [""]
  :parsed [:float "5.5"]
- :pos [-513 -80]}
+ :pos [-550 -103]
+ }
  "unqjx4uaj7lfbur" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [27 87]}
+ :pos [-47 111]
+ }
  "xmz8zwlt2gap3at" 
-{:inputs ["a"]
+{:color 2
+ :inputs ["a"]
  :label "* 0.05"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:number-widget :float "jridazsz8t3ev6" "0.019" ""]]
- :pos [-207 -80]}
+ :pos [-140 -46]
+ }
  "xts3uiirm0rncix" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.01"
  :outputs [""]
  :parsed [:float "0.01"]
- :pos [-276 87]}
+ :pos [-350 111]
+ }
  "zv62w6kc0gw8ls7" 
-{:inputs ["a"]
+{:color 2
+ :inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-301 -13]}}
- :scale 1.1445971454419728
+ :pos [-289 -46]
+ }}
+ :scale 0.9744413571404005
  :scroll [0 0]}}

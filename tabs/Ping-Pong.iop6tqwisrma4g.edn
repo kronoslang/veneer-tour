@@ -12,20 +12,27 @@
  :outputs [""]
  :parsed [:fn "Abs" [:tuple [:free-var "a"]]]
  :pos [164 26]
- :selected true}
+ }
  "1ov1wepeszle9sk" 
 {:inputs ["a"]
  :label "* 2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "2"]]
  :pos [-70 26]
- :selected true}
+ }
  "g1x7wp3u78t0x2e" 
 {:inputs ["a"]
  :label "- 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "1"]]
  :pos [31 26]
+ }
+ "vrkdivm17wbz3uk" 
+{:inputs []
+ :label ";Map a linear range from 0 to 1 to a back-and-forth triangle."
+ :outputs []
+ :parsed [:comment "Map a linear range from 0 to 1 to a back-and-forth triangle."]
+ :pos [-7 97]
  :selected true}
  "xfhl0e3gk11js8e" 
 {:eval :destructure
@@ -33,6 +40,7 @@
  :label "(a) = arg"
  :outputs ["a"]
  :parsed "arg"
- :pos [-220 -174]}}
+ :pos [-232 -59]
+ }}
  :scale 1.7799730329500296
  :scroll [0 0]}}

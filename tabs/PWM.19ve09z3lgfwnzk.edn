@@ -16,43 +16,59 @@
  :label "(freq width) = arg"
  :outputs ["freq" "width"]
  :parsed "arg"
- :pos [-340 -198]}
+ :pos [-318 -148]
+ }
  "bzs9cgu88vusa3o" 
 {:inputs ["a" "b" "more..."]
  :label ">"
  :outputs [""]
  :parsed [:infix [:free-var "a"] ">" [:free-var "b"] [:free-var "more..."]]
- :pos [-104 -128]}
- "cuy9y6pretrgu8s" 
+ :pos [-74 -119]
+ }
+ "cm58dbcfcjddn2y" 
 {:inputs []
+ :label ";This is a simple pulse-width modulation oscillator.\n\nWe use a comparator to compare the [phasor](#2) to a supplied width parameter, and pick either negative or positive half-cycle."
+ :outputs []
+ :parsed [:comment "This is a simple pulse-width modulation oscillator.\n\nWe use a comparator to compare the [phasor](#2) to a supplied width parameter, and pick either negative or positive half-cycle."]
+ :pos [86 85]
+ }
+ "cuy9y6pretrgu8s" 
+{:color 3
+ :inputs []
  :label "-0.25"
  :outputs [""]
  :parsed [:float "-0.25"]
- :pos [43 -185]
- :selected true}
+ :pos [115 -159]
+ }
  "ebzup1mibzzh3m5" 
-{:inputs ["truth" "when-true" "when-false"]
+{:color 3
+ :inputs ["truth" "when-true" "when-false"]
  :label "Algorithm:Choose($truth $when-true $when-false)"
  :outputs [""]
  :parsed [:fn "Algorithm:Choose" [:tuple [:free-var "truth"] [:free-var "when-true"] [:free-var "when-false"]]]
- :pos [100 5]}
+ :pos [130 14]
+ }
  "mdiuvla9wt9v49u" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-227 -198]}
+ :pos [-197 -189]
+ }
  "miamdxmgbt6s2gj" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.25"
  :outputs [""]
  :parsed [:float "0.25"]
- :pos [17 -124]}
+ :pos [33 -92]
+ }
  "z8lbro8sj8ykm3h" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [283 -3]}}
- :scale 1.4591699719715259
+ :pos [313 6]
+ }}
+ :scale 1.2946101885907135
  :scroll [0 0]}}

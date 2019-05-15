@@ -16,38 +16,61 @@
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-199 -9]}
+ :pos [-199 -9]
+ }
  "9o2djwb9e1ui5yj" 
-{:inputs ["b"]
+{:color 3
+ :inputs ["b"]
  :label "1 -"
  :outputs [""]
  :parsed [:infix [:float "1"] "-" [:free-var "b"]]
- :pos [155 -13]}
+ :pos [133 2]
+ }
  "bgt1apghq4ku3b2" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [298 -89]}
+ :pos [298 -89]
+ }
  "brdcah2rl2h8rdb" 
 {:inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-47 -9]}
+ :pos [-47 -9]
+ }
+ "c601keb5lbtkiqw" 
+{:color 3
+ :inputs []
+ :label ";Compute weights for left and right channel"
+ :outputs []
+ :parsed [:comment "Compute weights for left and right channel"]
+ :pos [187 155]
+ }
  "n89xiyww4dkle27" 
-{:ephemeral-inputs #{"elements1" "elements2"}
+{:color 3
+ :ephemeral-inputs #{"elements1" "elements2"}
  :inputs ["elements1" "elements2" "elements..."]
  :label "Vector:Cons($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements..."]]]
- :pos [204 94]}
+ :pos [204 94]
+ }
+ "pf9br0jbstp297r" 
+{:inputs []
+ :label ";Back and forth modulation"
+ :outputs []
+ :parsed [:comment "Back and forth modulation"]
+ :pos [-113 45]
+ }
  "qof6cpbkk039kdj" 
 {:inputs []
  :label "(sig mod-freq) = arg"
  :outputs ["sig" "mod-freq"]
  :parsed "arg"
- :pos [-321 -80]}}
+ :pos [-321 -80]
+ }}
  :scale 1.338832389038885
  :scroll [0 0]}}

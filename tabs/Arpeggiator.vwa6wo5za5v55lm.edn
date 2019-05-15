@@ -18,78 +18,123 @@
  ["zvsb40z55dgjuql" 1] [:fixed "5afxslwimv1o81x" 0]}
  :nodes
 {"1ztza5ao1y2gs8h" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "/ 12"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:float "12"]]
- :pos [289 -14]}
+ :pos [308 77]
+ }
  "4efjocrbnpgpoj8" 
 {:eval :destructure
  :inputs []
  :label "(phase octaves seq) = arg"
  :outputs ["phase" "octaves" "seq"]
  :parsed "arg"
- :pos [-464 -292]}
+ :pos [-445 -201]
+ }
  "5afxslwimv1o81x" 
-{:inputs ["sig"]
+{:color 2
+ :inputs ["sig"]
  :label "Control:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Control:Signal" [:tuple [:free-var "sig"]]]
- :pos [-293 -265]}
+ :pos [-274 -174]
+ }
  "5ii3kzrct5viali" 
-{:inputs ["tuple"]
+{:color 2
+ :inputs ["tuple"]
  :label "Arity($tuple)"
  :outputs [""]
  :parsed [:fn "Arity" [:tuple [:free-var "tuple"]]]
- :pos [-263 -136]}
+ :pos [-244 -45]
+ }
  "6bohx4yl3pnbc7h" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "- 69"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "69"]]
- :pos [163 -14]}
+ :pos [182 77]
+ }
  "7ime0da5wozlgoo" 
-{:flip-y true
+{:color 3
+ :flip-y true
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [507 -94]}
+ :pos [526 -3]
+ }
  "c4hjon1oucofrb3" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "440"
  :outputs [""]
  :parsed [:float "440"]
- :pos [282 -152]}
+ :pos [301 -61]
+ }
  "d9c3929w8vnlfgc" 
-{:inputs ["vector" "index"]
+{:color 2
+ :inputs ["vector" "index"]
  :label "Select($vector $index)"
  :outputs [""]
  :parsed [:fn "Select" [:tuple [:free-var "vector"] [:free-var "index"]]]
- :pos [2 -51]}
+ :pos [21 40]
+ }
  "ebua6uzzxf9vnr2" 
 {:inputs ["N" "seq"]
  :label "Arpeggio($N $seq)"
  :outputs [""]
  :parsed [:fn "Arpeggio" [:tuple [:free-var "N"] [:free-var "seq"]]]
- :pos [-422 -50]}
- "t8sckd2828n1yv" 
+ :pos [-403 41]
+ }
+ "k8r9rb5pfapcb3y" 
+{:color 2
+ :inputs []
+ :label ";Select a note according\nto phase input and arpeggio length"
+ :outputs []
+ :parsed [:comment "Select a note according\nto phase input and arpeggio length"]
+ :pos [38 -200]
+ }
+ "n2boygwtk1t78bx" 
+{:color 3
+ :inputs []
+ :label ";Convert MIDI note number to a frequency, so as to make note 69 sound at 440Hz."
+ :outputs []
+ :parsed [:comment "Convert MIDI note number to a frequency, so as to make note 69 sound at 440Hz."]
+ :pos [340 212]
+ }
+ "st3neu56jwddtrk" 
 {:inputs []
+ :label ";Construct the [arpeggio](#3)"
+ :outputs []
+ :parsed [:comment "Construct the [arpeggio](#3)"]
+ :pos [-404 111]
+ }
+ "t8sckd2828n1yv" 
+{:color 3
+ :inputs []
  :label "2"
  :outputs [""]
  :parsed [:float "2"]
- :pos [289 53]}
+ :pos [308 144]
+ }
  "ub37rff3p2n93vu" 
-{:inputs ["a" "b"]
+{:color 3
+ :inputs ["a" "b"]
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [435 22]}
+ :pos [454 113]
+ }
  "zvsb40z55dgjuql" 
-{:inputs ["a" "b" "more..."]
+{:color 2
+ :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-26 -139]}}
+ :pos [-7 -48]
+ }}
  :scale 1.0392367310804032
  :scroll [0 0]}}

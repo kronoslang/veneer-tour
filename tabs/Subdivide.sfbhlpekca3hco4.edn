@@ -12,21 +12,28 @@
  :label "(a in2) = arg"
  :outputs ["a" "in2"]
  :parsed "arg"
- :pos [-215 -175]
+ :pos [-214 -89]
  }
+ "a67ut3qe9ukc9pm" 
+{:inputs []
+ :label "; Make a [phasor](#2) signal go faster by a chosen factor"
+ :outputs []
+ :parsed [:comment "Make a [phasor](#2) signal go faster by a chosen factor"]
+ :pos [108 -122]
+ :selected true}
  "h533y0ti6542h63" 
 {:inputs ["a" "in2"]
  :label "($a * $in2)"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "in2"]]
- :pos [-65 25]
+ :pos [-64 111]
  }
  "m6rwx9vcdepnnr" 
 {:inputs ["x"]
  :label "Fraction($x)"
  :outputs [""]
  :parsed [:fn "Fraction" [:tuple [:free-var "x"]]]
- :pos [68 25]
+ :pos [69 111]
  }}
  :scale 1.6274747160620755
  :scroll [0 0]}}
