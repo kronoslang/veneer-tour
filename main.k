@@ -126,7 +126,7 @@ Bass-Voice(freq) {
 (n16z33jpv7j8ylf-0) = Lag(nwpe83va08cd9dpr-0 nsixncu0gz1mkqm0-0)
 (nbht48z5l8wt1mle-0) = arg
 (nhccvkfj44mfdh5z-0) = Lag(nfkb4hss14lm28g4-0 nsixncu0gz1mkqm0-0)
-(nodh5icwjmcez9wr-0) = 0.02
+(nodh5icwjmcez9wr-0) = 0.0015
 (n45p9ywsvt2xcqxm-0) = Ping-Pong(n1k75wcdzwfkuqpv-0)
 n0ce7at3hp2jhcgt-0
 }

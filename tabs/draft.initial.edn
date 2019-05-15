@@ -28,142 +28,214 @@
  :label "0.01 -o- 0.05"
  :outputs [""]
  :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.15884291347521137]
- :pos [-640 30]
+ :pos [-647 -233]
  }
  "0b1lenwbiasmvbe" 
-{:inputs ["a" "in2"]
+{:color 2
+ :inputs ["a" "in2"]
  :label "Subdivide"
  :outputs [""]
  :parsed [:fn "Subdivide" [:tuple [:free-var "a"] [:free-var "in2"]]]
- :pos [-446 9]
+ :pos [-449 -149]
  }
  "1q83t8as5g4j4em" 
-{:flip-y true
+{:color 3
+ :flip-y true
  :inputs ["phase" "octaves" "seq"]
  :label "Arpeggiator($phase $octaves $seq)"
  :outputs [""]
  :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
- :pos [-85 135]
+ :pos [-312 33]
  }
+ "1u500fqyhdbc36i" 
+{:inputs []
+ :label "; move around by swiping\nor right-button-dragging \n\nanywhere on the blank canvas."
+ :outputs []
+ :parsed [:comment "move around by swiping\nor right-button-dragging \n\nanywhere on the blank canvas."]
+ :pos [-33 264]
+ :selected true}
  "3to4eph0jiegbzd" 
 {:ephemeral-inputs #{"more1"}
  :inputs ["a" "b" "more1" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [532 162]
+ :pos [387 188]
  }
  "4ladxpxte1fb721" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [470 318]
+ :pos [461 286]
  }
  "4m2j20ftbnldikp" 
-{:inputs ["sig"]
+{:color 2
+ :inputs ["sig"]
  :label "Arp-Voice"
  :outputs [""]
  :parsed [:fn "Arp-Voice" [:tuple [:free-var "sig"]]]
- :pos [151 41]
+ :pos [-42 -31]
  }
  "53bzfbdo7an4zl7" 
-{:inputs ["a"]
+{:color 2
+ :inputs ["a"]
  :label "Ping-Pong"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-260 9]
+ :pos [-284 -149]
  }
  "7tcgzzve8aw0md5" 
-{:inputs []
+{:color 2
+ :inputs []
  :label "[52 59 57 62]"
  :outputs [""]
  :parsed [:list [:float "52"] [:float "59"] [:float "57"] [:float "62"]]
- :pos [-262 -173]
+ :pos [-254 -258]
  }
  "80p1t334zbi8p7n" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-460 138]
+ :pos [-569 32]
  }
  "9mwbg0f9je6ezq4" 
-{:inputs []
+{:color 2
+ :inputs []
  :label "8"
  :outputs [""]
  :parsed [:number-widget :float "axyatnanp81y7t" "16" ""]
- :pos [-508 -76]
+ :pos [-511 -234]
  }
  "aaabpbdi62qb90b" 
-{:inputs ["freq"]
+{:color 3
+ :inputs ["freq"]
  :label "Bass-Voice($freq)"
  :outputs [""]
  :parsed [:fn "Bass-Voice" [:tuple [:free-var "freq"]]]
- :pos [144 125]
+ :pos [-42 105]
+ }
+ "ao4wprh4w9et94q" 
+{:inputs []
+ :label ";reverb time"
+ :outputs []
+ :parsed [:comment "reverb time"]
+ :pos [99 -350]
  }
  "djowbt0al07hcfh" 
-{:inputs ["a"]
+{:color 4
+ :inputs ["a"]
  :label "* 0.035"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "0.035"]]
- :pos [545 -20]
+ :pos [407 3]
  }
  "dncoseh67g6qgi" 
-{:inputs ["phase" "octaves" "seq"]
+{:color 2
+ :inputs ["phase" "octaves" "seq"]
  :label "Arpeggiator($phase $octaves $seq)"
  :outputs [""]
  :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
- :pos [-76 9]
+ :pos [-114 -149]
+ }
+ "e95df0pr8i1h0hz" 
+{:inputs []
+ :label ";## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained \n\npiece of music. Both the sequencing\nand synthesis are implemented from \n\nscratch on the tabs of this workspace.\n\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."
+ :outputs []
+ :parsed [:comment "## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained \n\npiece of music. Both the sequencing\nand synthesis are implemented from \n\nscratch on the tabs of this workspace.\n\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."]
+ :pos [544 -408]
  }
  "fq421ot7f6px8y" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "#1"
  :outputs [""]
  :parsed [:invariant "1"]
- :pos [-273 223]
+ :pos [-428 103]
+ }
+ "fw1a436tmxlldpn" 
+{:inputs []
+ :label ";arpeggiators"
+ :outputs []
+ :parsed [:comment "arpeggiators"]
+ :pos [-273 -80]
+ }
+ "gmv59hmbxw7iydb" 
+{:inputs []
+ :label ";play here \n→"
+ :outputs []
+ :parsed [:comment "play here \n→"]
+ :pos [311 272]
  }
  "h0aeg84gcoa0nx" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "[28 31 33 36 35 31 33 30]"
  :outputs [""]
  :parsed [:list [:float "28"] [:float "31"] [:float "33"] [:float "36"] [:float "35"] [:float "31"] [:float "33"] [:float "30"]]
- :pos [-527 288]
+ :pos [-408 186]
  }
  "i3nfwrmri60ztds" 
-{:inputs []
+{:color 2
+ :inputs []
  :label "#4"
  :outputs [""]
  :parsed [:invariant "4"]
- :pos [-176 -95]
+ :pos [-261 -201]
  }
  "kxy4guqjw0bg49i" 
-{:inputs []
+{:color 4
+ :inputs []
  :label "0.5 -o- 10"
  :outputs [""]
  :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.7461672510925337]
- :pos [197 -344]
+ :pos [97 -273]
  }
  "l00n9pc7qcrwx0g" 
-{:inputs []
+{:color 4
+ :inputs []
  :label "0.04"
  :outputs [""]
  :parsed [:float "0.04"]
- :pos [195 -50]
+ :pos [166 17]
  }
  "l8d0fu23edscaam" 
-{:inputs ["sig" "mod-freq"]
+{:color 4
+ :inputs ["sig" "mod-freq"]
  :label "Auto-Panner($sig $mod-freq)"
  :outputs [""]
  :parsed [:fn "Auto-Panner" [:tuple [:free-var "sig"] [:free-var "mod-freq"]]]
- :pos [358 75]
+ :pos [265 96]
+ }
+ "rjykzlyka93e388" 
+{:inputs []
+ :label ";master clock"
+ :outputs []
+ :parsed [:comment "master clock"]
+ :pos [-646 -312]
+ }
+ "v3mojgd7e1u4dc1" 
+{:inputs []
+ :label ";synths"
+ :outputs []
+ :parsed [:comment "synths"]
+ :pos [-41 24]
+ }
+ "xuhfbnoefsksy88" 
+{:inputs []
+ :label ";effects"
+ :outputs []
+ :parsed [:comment "effects"]
+ :pos [280 8]
  }
  "xw9bx6d2aee63hl" 
-{:inputs ["sig" "rt60"]
+{:color 4
+ :inputs ["sig" "rt60"]
  :label "Reverb($sig $rt60)"
  :outputs [""]
  :parsed [:fn "Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"]]]
- :pos [371 -95]
+ :pos [229 -52]
  }}
  :scale 0.7532178216146205
  :scroll [0 0]}}
