@@ -138,7 +138,7 @@
  :outputs [""]
  :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
  :pos [-114 -149]
- :selected true}
+ }
  "e95df0pr8i1h0hz" 
 {:inputs []
  :label ";## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained piece of music. Both the sequencing\nand synthesis are implemented from scratch on the tabs of this workspace.\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."

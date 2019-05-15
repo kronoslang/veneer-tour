@@ -16,30 +16,42 @@
  :label "rbuf($order $sig~)"
  :outputs [""]
  :parsed [:fn "rbuf" [:tuple [:free-var "order"] [:free-var "sig~"]]]
- :pos [-21 -12]}
+ :pos [-21 -12]
+ }
  "bth2lr1oj3q5qxz" 
 {:inputs []
  :label "(sig len feedback) = arg"
  :outputs ["sig" "len" "feedback"]
  :parsed "arg"
- :pos [-304 -100]}
+ :pos [-304 -100]
+ }
+ "dbw01iwal87x33z" 
+{:inputs []
+ :label ";Ring buffer with feedback"
+ :outputs []
+ :parsed [:comment "Ring buffer with feedback"]
+ :pos [-63 57]
+ }
  "dmok8lhghvin91k" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [115 -18]}
+ :pos [94 -12]
+ }
  "fwfysl9ocv7xdmg" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [247 42]}
+ :pos [247 42]
+ }
  "owk7xv7feo935nk" 
 {:inputs ["a" "b" "more..."]
  :label "-"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [-128 -112]}}
+ :pos [-128 -112]
+ }}
  :scale 1.558376762158833
  :scroll [0 0]}}

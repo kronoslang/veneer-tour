@@ -16,49 +16,49 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [80 3]
+ :pos [128 30]
  }
  "8pm69st85s011c4" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-212 -95]
+ :pos [-164 -68]
  }
  "9qj344tnq54d75n" 
 {:inputs ["a"]
  :label "* 2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "2"]]
- :pos [-125 -15]
- :selected true}
+ :pos [-77 12]
+ }
  "dg53zl6ohvh918a" 
 {:inputs []
  :label "; We shape the naive [phasor](#2) to get a softer parabolic shape."
  :outputs []
  :parsed [:comment "We shape the naive [phasor](#2) to get a softer parabolic shape."]
- :pos [-48 96]
+ :pos [0 123]
  }
  "edp8hktjh8ltei0" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [220 -105]
+ :pos [268 -78]
  }
  "ikg50jm52pwxmtk" 
 {:inputs ["a"]
  :label "- 0.5"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "0.5"]]
- :pos [175 31]
+ :pos [223 58]
  }
  "khtag0at6be2pfh" 
 {:inputs ["a"]
  :label "- 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "1"]]
- :pos [-15 -15]
+ :pos [33 12]
  }
  "zbb4crogb1j8sdg" 
 {:eval :destructure
@@ -66,7 +66,7 @@
  :label "(freq) = arg"
  :outputs ["freq"]
  :parsed "arg"
- :pos [-327 -129]
+ :pos [-279 -102]
  }}
- :scale 1.522803164613181
+ :scale 1.3341563000450996
  :scroll [0 0]}}

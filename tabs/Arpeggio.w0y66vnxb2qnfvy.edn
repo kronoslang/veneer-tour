@@ -26,7 +26,7 @@
  :outputs [""]
  :parsed [:fn "Algorithm:Flatten" [:tuple [:free-var "set1"] [:free-var "set..."]]]
  :pos [197 172]
- :selected true}
+ }
  "aiiytu8et2w8xy2" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["func" "set1" "set..."]
