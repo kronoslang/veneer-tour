@@ -27,7 +27,7 @@
 {:inputs []
  :label "0.01 -o- 0.05"
  :outputs [""]
- :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.15884291347521137]
+ :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.14841151587861903]
  :pos [-647 -233]
  }
  "0b1lenwbiasmvbe" 
@@ -123,6 +123,13 @@
  :parsed [:comment "reverb time"]
  :pos [99 -350]
  }
+ "b5xtjau5z3jfbbg" 
+{:inputs []
+ :label "\"hello there!\""
+ :outputs [""]
+ :parsed [:string "hello there!"]
+ :pos [-615 335]
+ }
  "djowbt0al07hcfh" 
 {:color 4
  :inputs ["a"]
@@ -141,10 +148,10 @@
  }
  "e95df0pr8i1h0hz" 
 {:inputs []
- :label ";## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained piece of music. Both the sequencing\nand synthesis are implemented from scratch on the tabs of this workspace.\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."
+ :label ";## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained piece of music. Both the sequencing\nand synthesis are implemented from scratch on the tabs of this workspace.\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu.\n\n\nThere are also links, such as [this one](#b5xtjau5z3jfbbg|eval), that do things and take you places."
  :outputs []
- :parsed [:comment "## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained piece of music. Both the sequencing\nand synthesis are implemented from scratch on the tabs of this workspace.\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu."]
- :pos [544 -408]
+ :parsed [:comment "## Welcome to a Tour of Veneer! ##\n\nThis patch is a little self-contained piece of music. Both the sequencing\nand synthesis are implemented from scratch on the tabs of this workspace.\n\nYou can manipulate any numbers or sliders\nonscreen by dragging or swiping.\n\nTo look around, you can either switch tabs,\nor go to a function definition by selecting\na node and menu - patch - node definition, or\nvia the context menu.\n\n\nThere are also links, such as [this one](#b5xtjau5z3jfbbg|eval), that do things and take you places."]
+ :pos [559 -425]
  }
  "fq421ot7f6px8y" 
 {:color 3
