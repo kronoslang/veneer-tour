@@ -25,17 +25,17 @@
  :nodes
 {"06aa8r8bmvnk3er" 
 {:inputs []
- :label "0.01 -o- 0.1"
+ :label "0.01 -o- 0.05"
  :outputs [""]
- :parsed [:slider [:float "0.01"] [:float "0.1"] "-lv01wf" :linear 3 0.14540823303217543]
- :pos [-671 -137]
+ :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.15884291347521137]
+ :pos [-640 30]
  }
  "0b1lenwbiasmvbe" 
 {:inputs ["a" "in2"]
  :label "Subdivide"
  :outputs [""]
  :parsed [:fn "Subdivide" [:tuple [:free-var "a"] [:free-var "in2"]]]
- :pos [-477 -158]
+ :pos [-446 9]
  }
  "1q83t8as5g4j4em" 
 {:flip-y true
@@ -43,7 +43,7 @@
  :label "Arpeggiator($phase $octaves $seq)"
  :outputs [""]
  :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
- :pos [-116 -32]
+ :pos [-85 135]
  }
  "3to4eph0jiegbzd" 
 {:ephemeral-inputs #{"more1"}
@@ -51,119 +51,119 @@
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [501 -5]
+ :pos [532 162]
  }
  "4ladxpxte1fb721" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [439 151]
+ :pos [470 318]
  }
  "4m2j20ftbnldikp" 
 {:inputs ["sig"]
  :label "Arp-Voice"
  :outputs [""]
  :parsed [:fn "Arp-Voice" [:tuple [:free-var "sig"]]]
- :pos [120 -126]
+ :pos [151 41]
  }
  "53bzfbdo7an4zl7" 
 {:inputs ["a"]
  :label "Ping-Pong"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-291 -158]
+ :pos [-260 9]
  }
  "7tcgzzve8aw0md5" 
 {:inputs []
- :label "[40 45 47 50]"
+ :label "[52 59 57 62]"
  :outputs [""]
- :parsed [:list [:float "40"] [:float "45"] [:float "47"] [:number-widget :float "d75imiicfdwjdow" "50" ""]]
- :pos [-293 -340]
+ :parsed [:list [:float "52"] [:float "59"] [:float "57"] [:float "62"]]
+ :pos [-262 -173]
  }
  "80p1t334zbi8p7n" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-491 -29]
+ :pos [-460 138]
  }
  "9mwbg0f9je6ezq4" 
 {:inputs []
  :label "8"
  :outputs [""]
- :parsed [:number-widget :float "axyatnanp81y7t" "8" ""]
- :pos [-539 -243]
+ :parsed [:number-widget :float "axyatnanp81y7t" "16" ""]
+ :pos [-508 -76]
  }
  "aaabpbdi62qb90b" 
 {:inputs ["freq"]
  :label "Bass-Voice($freq)"
  :outputs [""]
  :parsed [:fn "Bass-Voice" [:tuple [:free-var "freq"]]]
- :pos [113 -42]
+ :pos [144 125]
  }
  "djowbt0al07hcfh" 
 {:inputs ["a"]
  :label "* 0.035"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "0.035"]]
- :pos [514 -187]
+ :pos [545 -20]
  }
  "dncoseh67g6qgi" 
 {:inputs ["phase" "octaves" "seq"]
  :label "Arpeggiator($phase $octaves $seq)"
  :outputs [""]
  :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
- :pos [-107 -158]
+ :pos [-76 9]
  }
  "fq421ot7f6px8y" 
 {:inputs []
  :label "#1"
  :outputs [""]
  :parsed [:invariant "1"]
- :pos [-304 56]
+ :pos [-273 223]
  }
  "h0aeg84gcoa0nx" 
 {:inputs []
  :label "[28 31 33 36 35 31 33 30]"
  :outputs [""]
  :parsed [:list [:float "28"] [:float "31"] [:float "33"] [:float "36"] [:float "35"] [:float "31"] [:float "33"] [:float "30"]]
- :pos [-558 121]
+ :pos [-527 288]
  }
  "i3nfwrmri60ztds" 
 {:inputs []
- :label "#5"
+ :label "#4"
  :outputs [""]
- :parsed [:invariant "5"]
- :pos [-207 -262]
+ :parsed [:invariant "4"]
+ :pos [-176 -95]
  }
  "kxy4guqjw0bg49i" 
 {:inputs []
  :label "0.5 -o- 10"
  :outputs [""]
  :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.7461672510925337]
- :pos [166 -511]
+ :pos [197 -344]
  }
  "l00n9pc7qcrwx0g" 
 {:inputs []
  :label "0.04"
  :outputs [""]
  :parsed [:float "0.04"]
- :pos [164 -217]
+ :pos [195 -50]
  }
  "l8d0fu23edscaam" 
 {:inputs ["sig" "mod-freq"]
  :label "Auto-Panner($sig $mod-freq)"
  :outputs [""]
  :parsed [:fn "Auto-Panner" [:tuple [:free-var "sig"] [:free-var "mod-freq"]]]
- :pos [327 -92]
+ :pos [358 75]
  }
  "xw9bx6d2aee63hl" 
 {:inputs ["sig" "rt60"]
  :label "Reverb($sig $rt60)"
  :outputs [""]
  :parsed [:fn "Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"]]]
- :pos [340 -262]
+ :pos [371 -95]
  }}
  :scale 0.7532178216146205
  :scroll [0 0]}}

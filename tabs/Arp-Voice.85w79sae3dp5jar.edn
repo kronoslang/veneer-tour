@@ -29,87 +29,75 @@
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [499 -40]
- }
+ :pos [499 -40]}
  "25yd618oqou1sv" 
 {:inputs ["freq"]
  :label "Parabolic-Wave($freq)"
  :outputs [""]
  :parsed [:fn "Parabolic-Wave" [:tuple [:free-var "freq"]]]
- :pos [161 -72]
- }
+ :pos [161 -72]}
  "2vlslf58twro06v" 
 {:inputs ["sig" "coef"]
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [64 -158]
- }
+ :pos [64 -158]}
  "353zjt798r3n5km" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-375 -80]
- }
+ :pos [-375 -80]}
  "60wbldfyx35jpgm" 
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
- :pos [-125 87]
- }
+ :pos [-125 87]}
  "6o27yxfdf7gjhkq" 
 {:inputs ["a"]
  :label "+ 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:float "1"]]
- :pos [-40 -80]
- }
+ :pos [-40 -80]}
  "6s854ryzdxz2n6k" 
 {:eval :destructure
  :inputs []
  :label "(sig) = arg"
  :outputs ["sig"]
  :parsed "arg"
- :pos [-140 -258]
- }
+ :pos [-140 -258]}
  "9jo82fqhm5zcf22" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [12 -256]
- }
+ :pos [12 -256]}
  "9qqvlz52l9ab3uq" 
 {:flip-y true
  :inputs ["sig" "coef"]
  :label "Lag($sig $coef)"
  :outputs [""]
  :parsed [:fn "Lag" [:tuple [:free-var "sig"] [:free-var "coef"]]]
- :pos [379 40]
- }
+ :pos [379 40]}
  "b6bhj5c7c3z122i" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [83 -80]
- }
+ :pos [83 -80]}
  "kpy6xjdtmzqczex" 
 {:inputs []
  :label "0.5"
  :outputs [""]
  :parsed [:number-widget :float "v0en1rs6iseckli" "0.105" ""]
- :pos [137 -5]
- }
+ :pos [137 -5]}
  "ps49h2vrv9tk8xz" 
 {:inputs ["a"]
  :label "+ 0.05"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:float "0.05"]]
- :pos [370 175]
- }
+ :pos [370 175]}
  "pszyxa8nu6g2de" 
 {:ephemeral-inputs #{"more1" "more2" "more3"}
  :inputs ["a" "b" "more1" "more2" "more3" "more..."]
@@ -123,35 +111,30 @@
  :label "5.5"
  :outputs [""]
  :parsed [:float "5.5"]
- :pos [-513 -80]
- }
+ :pos [-513 -80]}
  "unqjx4uaj7lfbur" 
 {:inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [27 87]
- }
+ :pos [27 87]}
  "xmz8zwlt2gap3at" 
 {:inputs ["a"]
  :label "* 0.05"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:number-widget :float "jridazsz8t3ev6" "0.019" ""]]
- :pos [-207 -80]
- }
+ :pos [-207 -80]}
  "xts3uiirm0rncix" 
 {:inputs []
  :label "0.01"
  :outputs [""]
  :parsed [:float "0.01"]
- :pos [-276 87]
- }
+ :pos [-276 87]}
  "zv62w6kc0gw8ls7" 
 {:inputs ["a"]
  :label "Ping-Pong($a)"
  :outputs [""]
  :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
- :pos [-301 -13]
- }}
+ :pos [-301 -13]}}
  :scale 1.1445971454419728
  :scroll [0 0]}}
