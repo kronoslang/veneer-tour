@@ -1,0 +1,51 @@
+{:draft-argument "Phasor(1000 * Phasor(0.1)) #20000 0.5"
+ :identifier "FX:Delay"
+ :identity "5oxdam3nbi6v8yk"
+ :patch
+{:cables
+{["5cae3018fue5bft" 0] [:fixed "bth2lr1oj3q5qxz" 1]
+ ["5cae3018fue5bft" 1] [:fixed "owk7xv7feo935nk" 0]
+ ["dmok8lhghvin91k" 0] [:fixed "5cae3018fue5bft" 0]
+ ["dmok8lhghvin91k" 1] [:fixed "bth2lr1oj3q5qxz" 2]
+ ["fwfysl9ocv7xdmg" 0] [:fixed "dmok8lhghvin91k" 0]
+ ["owk7xv7feo935nk" 0] [:fixed "bth2lr1oj3q5qxz" 0]
+ ["owk7xv7feo935nk" 1] [:fixed "dmok8lhghvin91k" 0]}
+ :nodes
+{"5cae3018fue5bft" 
+{:inputs ["order" "sig~"]
+ :label "rbuf($order $sig~)"
+ :outputs [""]
+ :parsed [:fn "rbuf" [:tuple [:free-var "order"] [:free-var "sig~"]]]
+ :pos [-21 -12]}
+ "bth2lr1oj3q5qxz" 
+{:inputs []
+ :label "(sig len feedback) = arg"
+ :outputs ["sig" "len" "feedback"]
+ :parsed "arg"
+ :pos [-304 -100]}
+ "dbw01iwal87x33z" 
+{:inputs []
+ :label ";Ring buffer with feedback"
+ :outputs []
+ :parsed [:comment "Ring buffer with feedback"]
+ :pos [-63 57]}
+ "dmok8lhghvin91k" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [94 -12]}
+ "fwfysl9ocv7xdmg" 
+{:inputs ["sig"]
+ :label "o))"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [247 42]}
+ "owk7xv7feo935nk" 
+{:inputs ["a" "b" "more..."]
+ :label "-"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [-128 -112]}}
+ :scale 1.558376762158833
+ :scroll [0 0]}}

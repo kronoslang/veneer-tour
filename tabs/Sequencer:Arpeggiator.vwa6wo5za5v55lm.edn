@@ -1,0 +1,125 @@
+{:identifier "Sequencer:Arpeggiator"
+ :identity "vwa6wo5za5v55lm"
+ :patch
+{:cables
+{["1ztza5ao1y2gs8h" 0] [:fixed "6bohx4yl3pnbc7h" 0]
+ ["5afxslwimv1o81x" 0] [:fixed "4efjocrbnpgpoj8" 0]
+ ["5ii3kzrct5viali" 0] [:fixed "ebua6uzzxf9vnr2" 0]
+ ["6bohx4yl3pnbc7h" 0] [:fixed "d9c3929w8vnlfgc" 0]
+ ["7ime0da5wozlgoo" 0] [:fixed "c4hjon1oucofrb3" 0]
+ ["7ime0da5wozlgoo" 1] [:fixed "ub37rff3p2n93vu" 0]
+ ["d9c3929w8vnlfgc" 0] [:fixed "ebua6uzzxf9vnr2" 0]
+ ["d9c3929w8vnlfgc" 1] [:fixed "zvsb40z55dgjuql" 0]
+ ["ebua6uzzxf9vnr2" 0] [:fixed "4efjocrbnpgpoj8" 1]
+ ["ebua6uzzxf9vnr2" 1] [:fixed "4efjocrbnpgpoj8" 2]
+ ["ub37rff3p2n93vu" 0] [:fixed "t8sckd2828n1yv" 0]
+ ["ub37rff3p2n93vu" 1] [:fixed "1ztza5ao1y2gs8h" 0]
+ ["zvsb40z55dgjuql" 0] [:fixed "5ii3kzrct5viali" 0]
+ ["zvsb40z55dgjuql" 1] [:fixed "5afxslwimv1o81x" 0]}
+ :nodes
+{"1ztza5ao1y2gs8h" 
+{:color 3
+ :inputs ["a"]
+ :label "/ 12"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:float "12"]]
+ :pos [308 77]}
+ "4efjocrbnpgpoj8" 
+{:eval :destructure
+ :inputs []
+ :label "(phase octaves seq) = arg"
+ :outputs ["phase" "octaves" "seq"]
+ :parsed "arg"
+ :pos [-445 -201]}
+ "5afxslwimv1o81x" 
+{:color 2
+ :inputs ["sig"]
+ :label "Control:Signal($sig)"
+ :outputs [""]
+ :parsed [:fn "Control:Signal" [:tuple [:free-var "sig"]]]
+ :pos [-274 -174]}
+ "5ii3kzrct5viali" 
+{:color 2
+ :inputs ["tuple"]
+ :label "Arity($tuple)"
+ :outputs [""]
+ :parsed [:fn "Arity" [:tuple [:free-var "tuple"]]]
+ :pos [-244 -45]}
+ "6bohx4yl3pnbc7h" 
+{:color 3
+ :inputs ["a"]
+ :label "- 69"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:float "69"]]
+ :pos [182 77]}
+ "7ime0da5wozlgoo" 
+{:color 3
+ :flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [526 -3]}
+ "c4hjon1oucofrb3" 
+{:color 3
+ :inputs []
+ :label "440"
+ :outputs [""]
+ :parsed [:float "440"]
+ :pos [301 -61]}
+ "d9c3929w8vnlfgc" 
+{:color 2
+ :inputs ["vector" "index"]
+ :label "Select($vector $index)"
+ :outputs [""]
+ :parsed [:fn "Select" [:tuple [:free-var "vector"] [:free-var "index"]]]
+ :pos [21 40]}
+ "ebua6uzzxf9vnr2" 
+{:inputs ["N" "seq"]
+ :label "Arpeggio($N $seq)"
+ :outputs [""]
+ :parsed [:fn "Sequencer:Arpeggio" [:tuple [:free-var "N"] [:free-var "seq"]]]
+ :pos [-403 41]}
+ "k8r9rb5pfapcb3y" 
+{:color 2
+ :inputs []
+ :label ";Select a note according\nto phase input and arpeggio length"
+ :outputs []
+ :parsed [:comment "Select a note according\nto phase input and arpeggio length"]
+ :pos [38 -200]}
+ "n2boygwtk1t78bx" 
+{:color 3
+ :inputs []
+ :label ";Convert MIDI note number to a frequency, so as to make note 69 sound at 440Hz."
+ :outputs []
+ :parsed [:comment "Convert MIDI note number to a frequency, so as to make note 69 sound at 440Hz."]
+ :pos [340 212]}
+ "st3neu56jwddtrk" 
+{:inputs []
+ :label ";Construct the [arpeggio](#3)"
+ :outputs []
+ :parsed [:comment "Construct the [arpeggio](#3)"]
+ :pos [-404 111]}
+ "t8sckd2828n1yv" 
+{:color 3
+ :inputs []
+ :label "2"
+ :outputs [""]
+ :parsed [:float "2"]
+ :pos [308 144]}
+ "ub37rff3p2n93vu" 
+{:color 3
+ :inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [454 113]}
+ "zvsb40z55dgjuql" 
+{:color 2
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-7 -48]}}
+ :scale 1.0392367310804032
+ :scroll [0 0]}}

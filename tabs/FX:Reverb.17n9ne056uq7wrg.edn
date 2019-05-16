@@ -1,0 +1,81 @@
+{:draft-argument "Phasor(40) 3.2 0.1"
+ :identifier "FX:Reverb"
+ :identity "17n9ne056uq7wrg"
+ :patch
+{:cables
+{["4o9tpv8t9e8r3c5" 0] [:fixed "drejkpp499evzk5" 0]
+ ["4o9tpv8t9e8r3c5" 1] [:fixed "drejkpp499evzk5" 1]
+ ["4o9tpv8t9e8r3c5" 2] [:fixed "7urmnz602x877if" 0]
+ ["4o9tpv8t9e8r3c5" 3] [:fixed "qpd9tdye058230f" 0]
+ ["6716r2bof5l02sr" 0] [:fixed "drejkpp499evzk5" 0]
+ ["6716r2bof5l02sr" 1] [:fixed "drejkpp499evzk5" 1]
+ ["6716r2bof5l02sr" 2] [:fixed "c1u5eijan2hbd54" 0]
+ ["6716r2bof5l02sr" 3] [:fixed "fnt7sk8whk7ke86" 0]
+ ["yq1743lkdhceb4" 0] [:fixed "6716r2bof5l02sr" 0]
+ ["yq1743lkdhceb4" 1] [:fixed "4o9tpv8t9e8r3c5" 0]}
+ :nodes
+{"4o9tpv8t9e8r3c5" 
+{:color 2
+ :inputs ["sig" "rt60" "d0" "dmul"]
+ :label "Mono-Verb($sig $rt60 $d0 $dmul)"
+ :outputs [""]
+ :parsed [:fn "FX:Mono-Verb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "d0"] [:free-var "dmul"]]]
+ :pos [-17 197]}
+ "6716r2bof5l02sr" 
+{:color 3
+ :inputs ["sig" "rt60" "d0" "dmul"]
+ :label "Mono-Verb($sig $rt60 $d0 $dmul)"
+ :outputs [""]
+ :parsed [:fn "FX:Mono-Verb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "d0"] [:free-var "dmul"]]]
+ :pos [-30 -4]}
+ "7urmnz602x877if" 
+{:color 2
+ :inputs []
+ :label "#800"
+ :outputs [""]
+ :parsed [:invariant "800"]
+ :pos [-77 98]}
+ "c1u5eijan2hbd54" 
+{:color 3
+ :inputs []
+ :label "#580"
+ :outputs [""]
+ :parsed [:invariant "580"]
+ :pos [-170 -88]}
+ "drejkpp499evzk5" 
+{:inputs []
+ :label "(sig rt60) = arg"
+ :outputs ["sig" "rt60"]
+ :parsed "arg"
+ :pos [-261 25]}
+ "fnt7sk8whk7ke86" 
+{:color 3
+ :inputs []
+ :label "#1.3"
+ :outputs [""]
+ :parsed [:invariant "1.3"]
+ :pos [-53 -124]}
+ "qpd9tdye058230f" 
+{:color 2
+ :inputs []
+ :label "#1.2"
+ :outputs [""]
+ :parsed [:invariant "1.2"]
+ :pos [47 72]}
+ "yq1743lkdhceb4" 
+{:ephemeral-inputs #{"elements1" "elements2"}
+ :flip-y true
+ :inputs ["elements1" "elements2" "elements..."]
+ :label "Vector:Cons($elements...)"
+ :outputs [""]
+ :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements..."]]]
+ :pos [250 54]}
+ "z9eu73yo6gi99o2" 
+{:inputs []
+ :label ";## The Reverb ##\n\n\nStereo reverb built from two [monophonic reverbs](#15) that are tuned differently to achieve decorrelated image."
+ :outputs []
+ :parsed [:comment "## The Reverb ##\n\n\nStereo reverb built from two [monophonic reverbs](#15) that are tuned differently to achieve decorrelated image."]
+ :pos [233 -186]
+ :selected true}}
+ :scale 1.3472906887081415
+ :scroll [0 0]}}

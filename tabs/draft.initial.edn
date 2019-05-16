@@ -35,7 +35,7 @@
  :inputs ["a" "in2"]
  :label "Subdivide"
  :outputs [""]
- :parsed [:fn "Subdivide" [:tuple [:free-var "a"] [:free-var "in2"]]]
+ :parsed [:fn "Sequencer:Subdivide" [:tuple [:free-var "a"] [:free-var "in2"]]]
  :pos [-449 -149]
  }
  "1q83t8as5g4j4em" 
@@ -44,7 +44,7 @@
  :inputs ["phase" "octaves" "seq"]
  :label "Arpeggiator($phase $octaves $seq)"
  :outputs [""]
- :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
+ :parsed [:fn "Sequencer:Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
  :pos [-312 33]
  }
  "1u500fqyhdbc36i" 
@@ -74,7 +74,7 @@
  :inputs ["sig"]
  :label "Arp-Voice"
  :outputs [""]
- :parsed [:fn "Arp-Voice" [:tuple [:free-var "sig"]]]
+ :parsed [:fn "Synths:Arp-Voice" [:tuple [:free-var "sig"]]]
  :pos [-42 -31]
  }
  "53bzfbdo7an4zl7" 
@@ -82,7 +82,7 @@
  :inputs ["a"]
  :label "Ping-Pong"
  :outputs [""]
- :parsed [:fn "Ping-Pong" [:tuple [:free-var "a"]]]
+ :parsed [:fn "Generators:Ping-Pong" [:tuple [:free-var "a"]]]
  :pos [-284 -149]
  }
  "7tcgzzve8aw0md5" 
@@ -97,7 +97,7 @@
 {:inputs ["freq"]
  :label "Phasor($freq)"
  :outputs [""]
- :parsed [:fn "Phasor" [:tuple [:free-var "freq"]]]
+ :parsed [:fn "Generators:Phasor" [:tuple [:free-var "freq"]]]
  :pos [-569 32]
  }
  "9mwbg0f9je6ezq4" 
@@ -113,7 +113,7 @@
  :inputs ["freq"]
  :label "Bass-Voice($freq)"
  :outputs [""]
- :parsed [:fn "Bass-Voice" [:tuple [:free-var "freq"]]]
+ :parsed [:fn "Synths:Bass-Voice" [:tuple [:free-var "freq"]]]
  :pos [-42 105]
  }
  "ao4wprh4w9et94q" 
@@ -143,7 +143,7 @@
  :inputs ["phase" "octaves" "seq"]
  :label "Arpeggiator($phase $octaves $seq)"
  :outputs [""]
- :parsed [:fn "Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
+ :parsed [:fn "Sequencer:Arpeggiator" [:tuple [:free-var "phase"] [:free-var "octaves"] [:free-var "seq"]]]
  :pos [-114 -149]
  }
  "e95df0pr8i1h0hz" 
@@ -212,7 +212,7 @@
  :inputs ["sig" "mod-freq"]
  :label "Auto-Panner($sig $mod-freq)"
  :outputs [""]
- :parsed [:fn "Auto-Panner" [:tuple [:free-var "sig"] [:free-var "mod-freq"]]]
+ :parsed [:fn "FX:Auto-Panner" [:tuple [:free-var "sig"] [:free-var "mod-freq"]]]
  :pos [265 96]
  }
  "rjykzlyka93e388" 
@@ -241,7 +241,7 @@
  :inputs ["sig" "rt60"]
  :label "Reverb($sig $rt60)"
  :outputs [""]
- :parsed [:fn "Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"]]]
+ :parsed [:fn "FX:Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"]]]
  :pos [229 -52]
  }}
  :scale 0.7532178216146205
