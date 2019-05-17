@@ -23,46 +23,40 @@
  :label ";[Compute delay line lengths](#g75up5zo5xk4p7|eval) as a geometric series based on tuning parameters"
  :outputs []
  :parsed [:comment "[Compute delay line lengths](#g75up5zo5xk4p7|eval) as a geometric series based on tuning parameters"]
- :pos [276 -159]
- }
+ :pos [276 -159]}
  "6pewh807ebdm1y7" 
 {:inputs ["sig" "len" "rt60"]
  :label "Delay($sig $len Math:Pow(0.001 $len / $rt60))"
  :outputs [""]
  :parsed [:fn "FX:Delay" [:tuple [:free-var "sig"] [:free-var "len"] [:fn "Math:Pow" [:tuple [:float "0.001"] [:infix [:free-var "len"] "/" [:free-var "rt60"]]]]]]
- :pos [-167 119]
- }
+ :pos [-167 119]}
  "aa6a4va2t4x5cag" 
 {:color 3
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-132 0]
- }
+ :pos [-132 0]}
  "ad4b4puwjsp3672" 
 {:inputs []
  :label "; ## The Mono Reverb ##"
  :outputs []
  :parsed [:comment "## The Mono Reverb ##"]
- :pos [232 -281]
- }
+ :pos [232 -281]}
  "aq21xd4lf8a41qr" 
 {:color 3
  :inputs []
  :label "; Compute reverb time in samples"
  :outputs []
  :parsed [:comment "Compute reverb time in samples"]
- :pos [-353 -8]
- }
+ :pos [-353 -8]}
  "do5u321cp3ujz3s" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["func" "set1" "set..."]
  :label "Algorithm:Reduce($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Reduce" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [318 209]
- }
+ :pos [318 209]}
  "fovycyja7hcdb0" 
 {:inputs []
  :label "(sig rt60 d0 dmul) = arg"
@@ -76,67 +70,58 @@
  :label "Algorithm:Expand($count $iterator $seed)"
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
- :pos [-33 -106]
- }
+ :pos [-33 -106]}
  "gpnfh6syua895j2" 
 {:inputs []
  :label ";Map will plug each delay time into our partially applied function."
  :outputs []
  :parsed [:comment "Map will plug each delay time into our partially applied function."]
- :pos [348 91]
- }
+ :pos [348 91]}
  "h7u833jic9ucvfq" 
 {:color 2
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-295 -212]
- }
+ :pos [-295 -212]}
  "noa69bhishhcb7p" 
 {:color 3
  :inputs ["sig"]
  :label "Rate-of($sig)"
  :outputs [""]
  :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
- :pos [-226 -73]
- }
+ :pos [-226 -73]}
  "u6bc2pvrryxot6o" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [197 209]
- }
+ :pos [197 209]}
  "visgokubmb8421k" 
 {:inputs []
  :label ";sum all channels by reducing with +"
  :outputs []
  :parsed [:comment "sum all channels by reducing with +"]
- :pos [322 273]
- }
+ :pos [322 273]}
  "vks2gbbj7l00647" 
 {:inputs []
  :label ";Partially applied [delay line](#14). We attach signal input and reverb time to the expression and leave delay time unplugged."
  :outputs []
  :parsed [:comment "Partially applied [delay line](#14). We attach signal input and reverb time to the expression and leave delay time unplugged."]
- :pos [-168 182]
- }
+ :pos [-168 182]}
  "x788blba8ccjl" 
 {:color 2
  :inputs []
  :label "#8"
  :outputs [""]
  :parsed [:invariant "8"]
- :pos [-159 -136]
- }
+ :pos [-159 -136]}
  "zpux5i59dohbf5y" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["func" "set1" "set..."]
  :label "Algorithm:Map($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [177 26]
- }}
+ :pos [177 26]}}
  :scale 0.8773456764788927
  :scroll [0 0]}}
