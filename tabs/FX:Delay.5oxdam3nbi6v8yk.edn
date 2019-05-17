@@ -1,4 +1,4 @@
-{:draft-argument "Phasor(1000 * Phasor(0.1)) #20000 0.5"
+{:draft-argument "Generators:Phasor(1000 * Generators:Phasor(0.1)) #20000 0.5"
  :identifier "FX:Delay"
  :identity "5oxdam3nbi6v8yk"
  :patch
