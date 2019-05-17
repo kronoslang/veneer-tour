@@ -54,7 +54,7 @@
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
  :pos [-93 206]
- :selected true}
+ }
  "yv2jw18d6w9br4" 
 {:inputs ["state" "in2"]
  :label "($state + $in2)"

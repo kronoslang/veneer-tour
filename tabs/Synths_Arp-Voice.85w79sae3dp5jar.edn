@@ -61,8 +61,7 @@
  :label ";[Parabolic Oscillator](#6)"
  :outputs []
  :parsed [:comment "[Parabolic Oscillator](#6)"]
- :pos [215 -47]
- :selected true}
+ :pos [215 -47]}
  "60wbldfyx35jpgm" 
 {:color 3
  :inputs ["freq"]
