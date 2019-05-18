@@ -47,6 +47,19 @@ Sequencer:Arpeggiator(phase octaves seq) {
 n7ime0da5wozlgoo-0
 }
 
+Generators:Phasor(freq) {
+;; Increases linearly from 0 to 1, and wraps back to 0. This occurs 'freq' times per second at the audio rate.
+(ng20yedveocgvlvy-0) = najdea0boi6956k8-0
+(nwqanes0pc21xvsy-0) = Gen:Signal(nkjh3qi6d1w5w7zz-0)
+(nlxyk22kq4gzgksk-0) = Gen:Rate()
+(n2q9lpzo651xq72-0) = (nwqanes0pc21xvsy-0 + najdea0boi6956k8-0)
+(nja45r6d488giop-0) = arg
+(nkjh3qi6d1w5w7zz-0) = (nja45r6d488giop-0 / nlxyk22kq4gzgksk-0)
+(ndkiuofz795bgiea-0) = Fraction(n2q9lpzo651xq72-0)
+(najdea0boi6956k8-0) = z-1(ndkiuofz795bgiea-0)
+ng20yedveocgvlvy-0
+}
+
 Generators:Lag(sig coef) {
 ;; applies smoothing to signal
 (n4oo7u55s57wjhr2-0) = (nd7dyf5r7hi5vbd4-1 * nbsfoqa8xffmjqez-0)
