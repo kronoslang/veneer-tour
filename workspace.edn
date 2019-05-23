@@ -9,7 +9,8 @@
  :url "https://kronoslang.io"
  :version "0.1"}
  :origin 
-{:parents ["f1dbb7131ab3a8794df43b7a15ca560aadb38ec4"]
+{:branch "default"
+ :parents ["a4d8992142e68b8a9abcb63329e4871a9136d3e1"]
  :service "bitbucket"
  :slug "kronoslang/veneer-tour"}
  :tabs ("tabs/draft.initial.edn" "tabs/Sequencer_Transpose.t3d9jawtw1aosj2.edn" "tabs/Sequencer_Arpeggio.w0y66vnxb2qnfvy.edn" "tabs/Sequencer_Arpeggiator.vwa6wo5za5v55lm.edn" "tabs/Generators_Phasor.jbfnj8trd5esa8i.edn" "tabs/Generators_Lag.lsiccf87hqwtzca.edn" "tabs/Generators_Parabolic-Wave.8pev1otzwrxrooa.edn" "tabs/Generators_PWM.19ve09z3lgfwnzk.edn" "tabs/Generators_Ping-Pong.iop6tqwisrma4g.edn" "tabs/Sequencer_Subdivide.sfbhlpekca3hco4.edn" "tabs/Synths_Bass-Voice.i7vlt4mn62nuy2q.edn" "tabs/Synths_Arp-Voice.85w79sae3dp5jar.edn" "tabs/FX_Auto-Panner.4c6otllvu5jr069.edn" "tabs/FX_Reverb.17n9ne056uq7wrg.edn" "tabs/FX_Delay.5oxdam3nbi6v8yk.edn" "tabs/FX_Mono-Verb.99t2cn19bb417lv.edn")
