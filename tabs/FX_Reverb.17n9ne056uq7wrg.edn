@@ -20,8 +20,7 @@
  :label "Mono-Verb($sig $rt60 $d0 $dmul)"
  :outputs [""]
  :parsed [:fn "FX:Mono-Verb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "d0"] [:free-var "dmul"]]]
- :pos [-17 197]
- }
+ :pos [-17 197]}
  "6716r2bof5l02sr" 
 {:color 3
  :inputs ["sig" "rt60" "d0" "dmul"]
@@ -36,39 +35,34 @@
  :label "#800"
  :outputs [""]
  :parsed [:invariant "800"]
- :pos [-77 98]
- }
+ :pos [-77 98]}
  "c1u5eijan2hbd54" 
 {:color 3
  :inputs []
  :label "#580"
  :outputs [""]
  :parsed [:invariant "580"]
- :pos [-170 -88]
- }
+ :pos [-170 -88]}
  "drejkpp499evzk5" 
 {:inputs []
  :label "(sig rt60) = arg"
  :outputs ["sig" "rt60"]
  :parsed "arg"
- :pos [-261 25]
- }
+ :pos [-261 25]}
  "fnt7sk8whk7ke86" 
 {:color 3
  :inputs []
  :label "#1.3"
  :outputs [""]
  :parsed [:invariant "1.3"]
- :pos [-53 -124]
- }
+ :pos [-53 -124]}
  "qpd9tdye058230f" 
 {:color 2
  :inputs []
  :label "#1.2"
  :outputs [""]
  :parsed [:invariant "1.2"]
- :pos [47 72]
- }
+ :pos [47 72]}
  "yq1743lkdhceb4" 
 {:ephemeral-inputs #{"elements1" "elements2"}
  :flip-y true
@@ -76,14 +70,12 @@
  :label "Vector:Cons($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements..."]]]
- :pos [250 54]
- }
+ :pos [250 54]}
  "z9eu73yo6gi99o2" 
 {:inputs []
  :label ";## The Reverb ##\n\n\nStereo reverb built from two [monophonic reverbs](#15) that are tuned differently to achieve decorrelated image."
  :outputs []
  :parsed [:comment "## The Reverb ##\n\n\nStereo reverb built from two [monophonic reverbs](#15) that are tuned differently to achieve decorrelated image."]
- :pos [233 -186]
- }}
+ :pos [233 -186]}}
  :scale 1.3472906887081415
  :scroll [0 0]}}

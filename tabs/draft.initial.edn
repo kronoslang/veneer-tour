@@ -27,7 +27,7 @@
 {:inputs []
  :label "0.01 -o- 0.05"
  :outputs [""]
- :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.19750630206841913]
+ :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.33997156902296877]
  :pos [-647 -233]
  }
  "0b1lenwbiasmvbe" 
@@ -105,9 +105,9 @@
  :inputs []
  :label "8"
  :outputs [""]
- :parsed [:number-widget :float "axyatnanp81y7t" "16" ""]
+ :parsed [:number-widget :float "axyatnanp81y7t" "8" ""]
  :pos [-511 -234]
- :selected true}
+ }
  "aaabpbdi62qb90b" 
 {:color 3
  :inputs ["freq"]
@@ -189,7 +189,7 @@
  :inputs []
  :label "0.5 -o- 10"
  :outputs [""]
- :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.378933349609375]
+ :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 1]
  :pos [97 -273]
  }
  "l00n9pc7qcrwx0g" 
