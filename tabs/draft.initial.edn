@@ -27,7 +27,7 @@
 {:inputs []
  :label "0.01 -o- 0.05"
  :outputs [""]
- :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.33997156902296877]
+ :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.5011853957850151]
  :pos [-647 -233]
  }
  "0b1lenwbiasmvbe" 
@@ -189,7 +189,7 @@
  :inputs []
  :label "0.5 -o- 10"
  :outputs [""]
- :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 1]
+ :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.6802592648490305]
  :pos [97 -273]
  }
  "l00n9pc7qcrwx0g" 
