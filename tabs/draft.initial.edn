@@ -27,7 +27,7 @@
 {:inputs []
  :label "0.01 -o- 0.05"
  :outputs [""]
- :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.5011853957850151]
+ :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.6275927054164147]
  :pos [-647 -233]
  }
  "0b1lenwbiasmvbe" 
@@ -123,13 +123,6 @@
  :parsed [:comment "reverb time"]
  :pos [99 -350]
  }
- "b5xtjau5z3jfbbg" 
-{:inputs []
- :label "\"hello there!\""
- :outputs [""]
- :parsed [:string "hello there!"]
- :pos [-615 335]
- }
  "djowbt0al07hcfh" 
 {:color 4
  :inputs ["a"]
@@ -189,7 +182,7 @@
  :inputs []
  :label "0.5 -o- 10"
  :outputs [""]
- :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.6802592648490305]
+ :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.42344201662435144]
  :pos [97 -273]
  }
  "l00n9pc7qcrwx0g" 
