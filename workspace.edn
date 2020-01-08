@@ -1,4 +1,6 @@
-{:current-tab 0
+{:assets 
+{}
+ :current-tab 0
  
  :manifest 
 {:dependencies 
@@ -8,6 +10,7 @@
  :name "veneer-tour"
  :url "https://kronoslang.io"
  :version "0.1"}
+ :name "veneer-tour"
  :origin 
 {:branch "no-tutorial"
  :parents ["c61c5f4916acef3acd31bbdfde785d85f9fc81fd"]

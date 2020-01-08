@@ -12,7 +12,7 @@
  ["4ladxpxte1fb721" 0] [:fixed "3to4eph0jiegbzd" 0]
  ["4m2j20ftbnldikp" 0] [:fixed "dncoseh67g6qgi" 0]
  ["53bzfbdo7an4zl7" 0] [:fixed "0b1lenwbiasmvbe" 0]
- ["80p1t334zbi8p7n" 0] [:fixed "06aa8r8bmvnk3er" 0]
+ ["80p1t334zbi8p7n" 0] [:fixed "63yas5devb36fpt" 0]
  ["aaabpbdi62qb90b" 0] [:fixed "1q83t8as5g4j4em" 0]
  ["djowbt0al07hcfh" 0] [:fixed "xw9bx6d2aee63hl" 0]
  ["dncoseh67g6qgi" 0] [:fixed "53bzfbdo7an4zl7" 0]
@@ -23,14 +23,7 @@
  ["xw9bx6d2aee63hl" 0] [:fixed "4m2j20ftbnldikp" 0]
  ["xw9bx6d2aee63hl" 1] [:fixed "kxy4guqjw0bg49i" 0]}
  :nodes
-{"06aa8r8bmvnk3er" 
-{:inputs []
- :label "0.01 -o- 0.05"
- :outputs [""]
- :parsed [:slider [:float "0.01"] [:float "0.05"] "-lv01wf" :linear 3 0.6275927054164147]
- :pos [-647 -233]
- }
- "0b1lenwbiasmvbe" 
+{"0b1lenwbiasmvbe" 
 {:color 2
  :inputs ["a" "in2"]
  :label "Subdivide"
@@ -85,6 +78,13 @@
  :parsed [:fn "Generators:Ping-Pong" [:tuple [:free-var "a"]]]
  :pos [-284 -149]
  }
+ "63yas5devb36fpt" 
+{:inputs []
+ :label "0.01 -o- 0.05"
+ :outputs [""]
+ :parsed [:widget "-8ko1qi" 0.5 {:type :slider, :limits [[:float "0.01"] [:float "0.05"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :pos [-749 -135]
+ :selected true}
  "7tcgzzve8aw0md5" 
 {:color 2
  :inputs []
@@ -105,7 +105,7 @@
  :inputs []
  :label "8"
  :outputs [""]
- :parsed [:number-widget :float "axyatnanp81y7t" "8" ""]
+ :parsed [:number-widget :float "-q1euof" "8" ""]
  :pos [-511 -234]
  }
  "aaabpbdi62qb90b" 
@@ -156,9 +156,9 @@
  }
  "gmv59hmbxw7iydb" 
 {:inputs []
- :label ";play here \n→"
+ :label ";play here \nâ"
  :outputs []
- :parsed [:comment "play here \n→"]
+ :parsed [:comment "play here \nâ"]
  :pos [311 272]
  }
  "h0aeg84gcoa0nx" 
@@ -182,7 +182,7 @@
  :inputs []
  :label "0.5 -o- 10"
  :outputs [""]
- :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.42344201662435144]
+ :parsed [:slider [:float "0.5"] [:float "10"] "ltbfrv" :linear 3 0.4635689708138209]
  :pos [97 -273]
  }
  "l00n9pc7qcrwx0g" 
